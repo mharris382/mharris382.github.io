@@ -1,0 +1,46 @@
+---
+layout: default
+thumbnail: placeholder.png
+engine: unreal
+language: c# 
+roles: programmer
+date-start: 2023-01
+date-end: 2023-08
+---
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+  </head>
+  <body>
+    <display-inside class="project-grid">
+        <div class="col-1-2">
+            <img src="/assets/images/{{page.thumbnail}}">
+        </div>
+        <table class="col-1-2">
+            <tr>
+                <td>Engine</td>
+                <td>{{page.engine | capitalize}}</td>
+            </tr>
+            <tr>
+                <td>Language</td>
+                <td>{{page.language | capitalize}}</td>
+            </tr>
+            <tr>
+                <td>Role(s)</td>
+                <td>{{ page.roles | capitalize }}</td>
+            </tr>
+            <tr>
+                <td>Start:</td>
+                <td>{{page.date-start}}</td>
+            </tr>
+            <tr>
+                <td>End:</td>
+                <td>{{page.date-end}}</td>
+            </tr>
+        </table>
+    </display-inside>
+    <p>{{content}}</p>
+  </body>
+</html>
