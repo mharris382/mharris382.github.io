@@ -1,14 +1,7 @@
 ---
-layout: project-layout
-thumbnail: placeholder.png
-date-start: Jan 2021
-date-end: May 2023
-title: Test Project
-language: c#
-roles: project manager, programmer, game designer
-engine: unreal
+layout: single
 ---
 
-This is just some random placeholder text in the project file.
+# Test Project
 
-This is the rest...hopefully. Shouldn't be in the excerpt.
+Here it is! A test project for the Minimal Mistakes theme. Whoop de doo.

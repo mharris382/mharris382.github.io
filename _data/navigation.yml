@@ -1,4 +1,5 @@
-- name: Home
-  link: /
-- name: About
-  link: /about.html
+main:
+  - title: "About"
+    url: /index.html
+  - title: "Portfolio"
+    url: /portfolio/
