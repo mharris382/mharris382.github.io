@@ -7,7 +7,7 @@ title                    : "Max Harris"
 title_separator          : "-"
 subtitle                 : Game Developer # site tagline that appears below site title in masthead
 name                     : "Max Harris"
-description              : "An amazing website."
+description              : #"An amazing website."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -27,45 +27,45 @@ social:
 # Site Author
 author:
   name             : "Max Harris"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  #avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "I am an **amazing** person."
-  location         : 
+  #location         : 
   email            : mharris382@gmail.com
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
+      url: "mailto:mharris382@gmail.com"
+    - label: LinkedIn
+      icon: "fab fa-linkedin"
+      url: "https://www.linkedin.com/in/mharris382" 
+    - label: "itch.io"
+      icon: "fab fa-itch-io"
+      url: "https://tyranicgoat.itch.io/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://github.com/mharris382"
 
 # Site Footer
-footer:
-  links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url:
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      # url:
-    - label: "GitLab"
-      icon: "fab fa-fw fa-gitlab"
-      # url:
-    - label: "Bitbucket"
-      icon: "fab fa-fw fa-bitbucket"
-      # url:
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url:
+#footer:
+#  links:
+#    - label: "Twitter"
+#      icon: "fab fa-fw fa-twitter-square"
+#      # url:
+#    - label: "Facebook"
+#      icon: "fab fa-fw fa-facebook-square"
+#      # url:
+#    - label: "GitHub"
+#      icon: "fab fa-fw fa-github"
+#      # url:
+#    - label: "GitLab"
+#      icon: "fab fa-fw fa-gitlab"
+#      # url:
+#    - label: "Bitbucket"
+#      icon: "fab fa-fw fa-bitbucket"
+#      # url:
+#    - label: "Instagram"
+#      icon: "fab fa-fw fa-instagram"
+#      # url:
 
 # Reading Files
 include:
@@ -215,3 +215,4 @@ defaults:
       layout: single
       author_profile: false
       share: false
+      images_path: /assets/images/
