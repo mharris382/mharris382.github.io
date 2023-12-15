@@ -9,7 +9,7 @@ var store = [{
         "excerpt":"Note: This is an in-progress project. It will be a submission to the LSD Dream Emulator Game Jam. The project is based on an open-ended walking simulator. The game is experienced from a First Person or Third Person perspective. In the game, the player will travel into 3 dreamworlds where...","categories": [],
         "tags": [],
         "url": "/portfolio/patchwork/",
-        "teaser": "/assets/images/cute-simple-city-lrg.jpg"
+        "teaser": "/assets/images/patchwork/patch-overlay-horizon.png"
       },{
         "title": "Test_project",
         "excerpt":"Test Project   Here it is! A test project for the Minimal Mistakes theme. Whoop de doo.  ","categories": [],

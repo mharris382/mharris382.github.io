@@ -1,10 +1,10 @@
 ---
 title: Patchwork
-tagline: "[insert a tagline here]"
+excerpt: "[insert a tagline here]"
 header:
   overlay_image: /assets/images/patchwork/patch-overlay-horizon.png
   overlay_filter: 0.25
-  teaser: /assets/images/cute-simple-city-lrg.jpg
+  teaser: /assets/images/patchwork/patch-overlay-horizon.png
 sidebar:   
   - title: "Role"
     text: Lead Programmer, Technical Artist, Level Designer, Modeling, and Project Manager 
