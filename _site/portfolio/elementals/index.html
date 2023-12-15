@@ -10,7 +10,7 @@
     <meta charset="utf-8">
 
 <!-- begin _includes/seo.html --><title>Elementals - Max Harris</title>
-<meta name="description" content="Something about the project">
+<meta name="description" content="An action platformer centered on spellcasting and magic">
 
 
   <meta name="author" content="Max Harris">
@@ -26,17 +26,17 @@
 <meta property="og:url" content="http://localhost:4000/portfolio/elementals/">
 
 
-  <meta property="og:description" content="Something about the project">
+  <meta property="og:description" content="An action platformer centered on spellcasting and magic">
 
 
 
-  <meta property="og:image" content="http://localhost:4000/assets/images/cute-simple-city-lrg.jpg">
+  <meta property="og:image" content="http://localhost:4000/assets/images/elementals/elementals-header-overlay-2.png">
 
 
 
 
 
-  <meta property="article:published_time" content="2023-12-11T19:04:35-05:00">
+  <meta property="article:published_time" content="2023-12-15T16:32:19-05:00">
 
 
 
@@ -137,6 +137,40 @@
 
     <div class="initial-content">
       
+  
+
+
+
+
+
+
+
+<div class="page__hero--overlay"
+  style=" background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('/assets/images/elementals/elementals-header-overlay-2.png');"
+>
+  
+    <div class="wrapper">
+      <h1 id="page-title" class="page__title" itemprop="headline">
+        
+          Elementals
+
+        
+      </h1>
+      
+        <p class="page__lead">An action platformer centered on spellcasting and magic
+</p>
+      
+      
+
+
+      
+      
+    </div>
+  
+  
+</div>
+
+
 
 
 
@@ -147,17 +181,55 @@
   
     
       
-        <img src="http://placehold.it/350x250"
-             alt="logo">
       
-      <h3>Role</h3>
-      <p>Designer, Front-End Developer</p>
+      <p><a href="https://github.com/mharris382/Software-Engineering-Capstone" class="btn btn--info">Github</a></p>
 
       
     
       
-      <h3>Responsibilities</h3>
+      
+      <p><a href="https://tyranicgoat.itch.io/elementals" class="btn btn--info">Web Build</a></p>
+
+      
+    
+      
+      <h3>Role</h3>
       <p>Programmer, Project Manager, Game Designer</p>
+
+      
+    
+      
+      <h3>Project Info</h3>
+      
+      
+    
+      
+      
+      <p>Feb 2022 - May 2022</p>
+
+      
+    
+      
+      
+      <p><strong>Engine:</strong> Unity</p>
+
+      
+    
+      
+      
+      <p><strong>Language:</strong> C#</p>
+
+      
+    
+      
+      
+      <p><strong>Tools</strong></p>
+
+      
+    
+      
+      
+      <p>Cinemachine plugin</p>
 
       
     
@@ -169,24 +241,135 @@
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="Elementals">
-    <meta itemprop="description" content="Something about the project">
+    <meta itemprop="description" content="An action platformer centered on spellcasting and magic">
     
     
 
     <div class="page__inner-wrap">
       
-        <header>
-          <h1 id="page-title" class="page__title" itemprop="headline">Elementals
-</h1>
-          
-
-
-        </header>
-      
 
       <section class="page__content" itemprop="text">
         
-        <p>Content!!</p>
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> Table of Contents</h4></header>
+              <ul class="toc__menu"><li><a href="#concept">Concept</a></li><li><a href="#technical-highlights">Technical Highlights</a></li><li><a href="#challenges-and-solutions">Challenges and Solutions</a></li><li><a href="#conclusion">Conclusion</a></li></ul>
+
+            </nav>
+          </aside>
+        
+        <p>This was my senior capstone project. I had made a simple platformer game during the second annual Go Godot jam and shared it with my capstone team suggesting that we remake and improve it in Unity. I wanted to finish the gameplay loop that had been prototyped during that jam.</p>
+
+<!-- Courtesy of embedresponsively.com //-->
+
+<div class="responsive-video-container">
+    <iframe src="https://www.youtube-nocookie.com/embed/qbkzEemPbv0" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+  </div>
+
+<h1 id="concept">Concept</h1>
+
+<p>The gameplay concept was an action platformer centered on spellcasting and magic. The player would control one of 5 elements and fight elemental enemies. Enemies drop mana when they are defeated, which the player uses to collect elemental mana to fuel spells. All elements use a shared supply of mana, but the player can only collect mana matching their current element. The original jam entry was missing a number of key features: it only had one level, no sound, there were no win/lose conditions implemented, and no enemy pathfinding. The project objectives were to:</p>
+
+<ol>
+  <li>Reimplement the game in Unity</li>
+  <li>Add the missing game features</li>
+  <li>Expand and improve the game mechanics</li>
+</ol>
+
+<h1 id="technical-highlights">Technical Highlights</h1>
+
+<p>This project was based on a previous project, my portfolio fighting platformer. The complexity of the combat system was reduced slightly to accommodate the ability of the other more junior programmers; but the core architecture was brought over. A key architectural design decision was to separate Monobehaviours into two categories: systems and data. The data components would not contain any (or very limited) methods or functionality.</p>
+
+<figure>
+	<a href="/assets/images/elementals/character-movement-system-diagram.png"><img src="/assets/images/elementals/character-movement-system-diagram.png" /></a>
+	<figcaption>Character movement system diagram.</figcaption>
+</figure>
+
+<p>The diagram shows how the character movement system was implemented using this shared data component pattern. The yellow class, <code class="language-plaintext highlighter-rouge">CharacterState</code> (MonoBehaviour) is the data container component. In this example it also has two subcontainers (regular classes) for specific sets of data. Specifically the data holding the desired movement state (Input) and the data holding the actual movement state. The blue classes (MonoBehaviour) are systems that either read and/or write to data held by the <code class="language-plaintext highlighter-rouge">CharacterState</code> component.<br />
+There are several valuable points to notice about this diagram. First, none of the blue systems classes reference each other at all. <code class="language-plaintext highlighter-rouge">CharacterMove</code> only needs to know that the input data exists, it doesn’t know or care how it is being updated.<br />
+Secondly, it’s important to realize that each data element is only written from one class within a system. I added notes to the movement state so it would be clear that reads and writes are not in conflict with each other between the <code class="language-plaintext highlighter-rouge">CharacterAnimator</code> and the <code class="language-plaintext highlighter-rouge">CharacterMove</code>. <code class="language-plaintext highlighter-rouge">CharacterAnimator</code> only writes to certain data that <code class="language-plaintext highlighter-rouge">CharacterMove</code> reads from.  The data that character movement writes to, is read-only for the animator. You can see this in the code snippet below showing the animator’s update function. This rule makes this system easy to understand and debug because there is always a single point of authorship for any piece of data.</p>
+
+<p><code class="language-plaintext highlighter-rouge">CharacterAnimator Update()</code> method showing the animator writing to and reading from the Character movement state data.</p>
+
+<div class="language-cs highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">void</span> <span class="nf">Update</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="c1">//animator reads only from character movement state </span>
+    <span class="kt">var</span> <span class="n">moving</span> <span class="p">=</span> <span class="n">Mathf</span><span class="p">.</span><span class="nf">Abs</span><span class="p">(</span><span class="n">_state</span><span class="p">.</span><span class="n">Movement</span><span class="p">.</span><span class="n">Velocity</span><span class="p">.</span><span class="n">x</span><span class="p">)</span> <span class="p">&gt;</span> <span class="m">0.1f</span><span class="p">;</span>
+    <span class="n">_anim</span><span class="p">.</span><span class="nf">SetBool</span><span class="p">(</span><span class="n">Moving</span><span class="p">,</span> <span class="n">moving</span><span class="p">);</span>
+    <span class="n">_anim</span><span class="p">.</span><span class="nf">SetBool</span><span class="p">(</span><span class="n">Grounded</span><span class="p">,</span> <span class="n">_state</span><span class="p">.</span><span class="n">Movement</span><span class="p">.</span><span class="n">IsGrounded</span><span class="p">);</span>
+    
+    <span class="c1">//animator writes to interacting state from the animation machine parameters </span>
+    <span class="n">_state</span><span class="p">.</span><span class="n">IsInteracting</span> <span class="p">=</span> <span class="n">_anim</span><span class="p">.</span><span class="nf">GetBool</span><span class="p">(</span><span class="n">IsInteracting</span><span class="p">);</span>
+    <span class="n">_state</span><span class="p">.</span><span class="n">PhysicsMode</span> <span class="p">=</span> <span class="p">(</span><span class="n">InteractionPhysicsMode</span><span class="p">)</span><span class="n">_anim</span><span class="p">.</span><span class="nf">GetInteger</span><span class="p">(</span><span class="n">InteractionPhysMode</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>Additionally the <code class="language-plaintext highlighter-rouge">CharacterAnimator</code> writes to data inside its <code class="language-plaintext highlighter-rouge">OnAnimatorMove()</code> function to store root motion information. It’s important that the animator does not actually apply the root motion directly, because that would mean velocity is being authored in two places.</p>
+
+<div class="language-cs highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">private</span> <span class="k">void</span> <span class="nf">OnAnimatorMove</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="kt">var</span> <span class="n">deltaPosition</span> <span class="p">=</span> <span class="n">_anim</span><span class="p">.</span><span class="n">deltaPosition</span><span class="p">;</span>
+    <span class="n">_state</span><span class="p">.</span><span class="n">Movement</span><span class="p">.</span><span class="n">AnimatorDelta</span> <span class="p">=</span> <span class="n">deltaPosition</span><span class="p">;</span>
+    <span class="n">_state</span><span class="p">.</span><span class="n">Movement</span><span class="p">.</span><span class="n">AnimatorAccel</span> <span class="p">=</span> <span class="n">deltaPosition</span> <span class="p">/</span> <span class="n">Time</span><span class="p">.</span><span class="n">deltaTime</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">CharacterMove FixedUpdate()</code> method showing how the movement system’s behavior is controlled by the data written by the animator. This allows the animator to take control of the character’s movement during important animations like spell casting.</p>
+
+<div class="language-cs highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Based on Physics Updates</span>
+<span class="k">private</span> <span class="k">void</span> <span class="nf">FixedUpdate</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="k">void</span> <span class="nf">CompensateForMovingPlatforms</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">State</span><span class="p">.</span><span class="n">MovingGround</span><span class="p">.</span><span class="n">Count</span> <span class="p">&gt;</span> <span class="m">0</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">Vector2</span> <span class="n">velocity</span> <span class="p">=</span> <span class="n">Vector2</span><span class="p">.</span><span class="n">zero</span><span class="p">;</span>
+            <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span> <span class="n">i</span> <span class="p">&lt;</span> <span class="n">State</span><span class="p">.</span><span class="n">MovingGround</span><span class="p">.</span><span class="n">Count</span><span class="p">;</span> <span class="n">i</span><span class="p">++)</span>
+            <span class="p">{</span>
+                <span class="n">velocity</span> <span class="p">+=</span> <span class="n">State</span><span class="p">.</span><span class="n">MovingGround</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">Velocity</span><span class="p">;</span>
+            <span class="p">}</span>
+
+            <span class="n">_rb</span><span class="p">.</span><span class="n">velocity</span> <span class="p">=</span> <span class="n">velocity</span> <span class="p">+</span> <span class="n">_rb</span><span class="p">.</span><span class="n">velocity</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    
+    <span class="k">if</span><span class="p">(!</span><span class="n">IsJumping</span> <span class="p">&amp;&amp;</span> <span class="n">IsGrounded</span><span class="p">)</span>
+        <span class="nf">CompensateForMovingPlatforms</span><span class="p">();</span>
+    
+    <span class="c1">//if not playing animation do normal movement</span>
+    <span class="k">if</span> <span class="p">(!</span><span class="n">_state</span><span class="p">.</span><span class="n">IsInteracting</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="nf">NormalMovementFixed</span><span class="p">();</span>
+        <span class="k">return</span><span class="p">;</span>
+    <span class="p">}</span>
+  
+    <span class="c1">//if playing animation perform movement based on interaction physics mode</span>
+    <span class="kt">var</span> <span class="n">rootMotionAccel</span> <span class="p">=</span> <span class="n">State</span><span class="p">.</span><span class="n">Movement</span><span class="p">.</span><span class="n">AnimatorAccel</span><span class="p">;</span>
+    <span class="k">switch</span> <span class="p">(</span><span class="n">_state</span><span class="p">.</span><span class="n">PhysicsMode</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="k">case</span> <span class="n">InteractionPhysicsMode</span><span class="p">.</span><span class="n">FullRootMotion</span><span class="p">:</span>
+            <span class="n">_rb</span><span class="p">.</span><span class="n">velocity</span> <span class="p">+=</span> <span class="n">rootMotionAccel</span><span class="p">;</span>
+            <span class="k">break</span><span class="p">;</span>
+        <span class="k">case</span> <span class="n">InteractionPhysicsMode</span><span class="p">.</span><span class="n">Mixed</span><span class="p">:</span>
+            <span class="n">_rb</span><span class="p">.</span><span class="n">velocity</span> <span class="p">+=</span> <span class="n">rootMotionAccel</span> <span class="p">+</span> <span class="p">(</span><span class="n">Physics2D</span><span class="p">.</span><span class="n">gravity</span> <span class="p">*</span> <span class="n">Time</span><span class="p">.</span><span class="n">fixedDeltaTime</span><span class="p">);</span>
+            <span class="k">break</span><span class="p">;</span>
+        <span class="k">case</span> <span class="n">InteractionPhysicsMode</span><span class="p">.</span><span class="n">FullPhysics</span><span class="p">:</span>
+        <span class="k">default</span><span class="p">:</span>
+            <span class="k">break</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>The advantages of the systems described above are really that they are extremely flexible.  Any system can be removed or replaced with no impact on any other systems. New functionality can be integrated into the system with relative ease. For example the movement logic could be replaced with a full state machine implementation without needing to change any animator code or input code. The input can be replaced with an AI decision maker with absolutely no changes to the rest of the systems. This loose coupling made it much easier for the less experienced programmers to be able to dive into specific systems without needing to worry about all the extraneous logic and data required by every system in the controller.</p>
+
+<h1 id="challenges-and-solutions">Challenges and Solutions</h1>
+
+<p>Bridging the skill gap between myself and the other two programmers was not an easy task. I had to implement most of the primary systems myself, but I wanted the other two CS students to get opportunities to learn and contribute to the project. Students were assigned to groups based on skill level, attempting to achieve a balance of advanced and beginner skill levels on each team. Initially our group was assigned with 4 members. I was assigned as one of the advanced members along with another programmer, leaving two remaining beginner students.  Unfortunately, the other advanced programmer left our team leaving me as the only advanced programmer on the team. Having never worked on a project of this scale, it was a significant challenge making the work accessible to all team members without taking them completely out of the programming tasks. I had to find a solution that would allow me to implement the more sophisticated systems without those systems interfering with and overwhelming the junior programmers.</p>
+
+<p>Implementing the loose coupling described above allowed me to give the junior programmers systems to implement without them needing to concern themselves with the complex ramifications of the related systems. However, we still had to rely on some peer programming where I could coach them for some of the problems, especially at the very beginning. I tried to find as many avenues for the other programmers to contribute and develop the project beyond programming directly. I had to record a number of tutorials for team members to reference as well when working on various tasks. By the end of the project, each person had contributed at least one level that they had authored completely themselves and contributed numerous prefabs to the project, as well as contributing various amounts of code.</p>
+
+<h1 id="conclusion">Conclusion</h1>
+
+<p>This was my first taste of real project management. Before this, and some after as well, most projects had either been personal with no real deadlines or I was not in charge of leading and organizing the project. It was definitely taxing for me at the time, because I had to spend a lot of time working out ways for the inexperienced programmers to learn and be part of the project. At the end of the project I was slightly disappointed that I hadn’t gotten as much time to really experiment and iterate on the game mechanics. However, coming back to now I’ve already made some additions and improvements. Opening up after 2 years, I found the project quite easy to work with and easy to extend which is a testament to the overall quality and dedication to clean code.</p>
 
         
       </section>
@@ -209,7 +392,7 @@
       <a href="#" class="pagination--pager disabled">Previous</a>
     
     
-      <a href="/portfolio/foo-bar-website/" class="pagination--pager" title="Foo Bar Identity
+      <a href="/portfolio/patchwork/" class="pagination--pager" title="Patchwork
 ">Next</a>
     
   </nav>
