@@ -6,8 +6,8 @@ header:
   overlay_filter: 0.25
   teaser: /assets/images/elementals/elementals-teaser_thumbnail.png
 sidebar:   
-  - text: "[Github](https://github.com/mharris382/Software-Engineering-Capstone){: .btn .btn--info}"
-  - text: "[Web Build](https://tyranicgoat.itch.io/elementals){: .btn .btn--info}"
+  - text: "[Github](https://github.com/mharris382/Software-Engineering-Capstone){: .btn .btn--primary}"
+  - text: "[Web Build](https://tyranicgoat.itch.io/elementals){: .btn .btn--primary}"
   - title: "Role"
     text: "Programmer, Project Manager, Game Designer"
   - title: "Project Info"
