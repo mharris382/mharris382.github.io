@@ -1,10 +1,10 @@
 remote_theme: mmistakes/minimal-mistakes@4.24.0
-minimal_mistakes_skin    : "contrast" # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "air" # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
 title                    : "Max Harris"
-title_separator          : "-"
+title_separator          : "|"
 subtitle                 : Game Developer # site tagline that appears below site title in masthead
 name                     : "Max Harris"
 description              : #"An amazing website."
@@ -34,7 +34,7 @@ author:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:mharris382@gmail.com"
-    - label: LinkedIn
+    - label: "LinkedIn"
       icon: "fab fa-linkedin"
       url: "https://www.linkedin.com/in/mharris382" 
     - label: "itch.io"
@@ -215,3 +215,11 @@ defaults:
       author_profile: false
       share: false
       images_path: /assets/images/
+      header:
+        overlay_image: /assets/images/placeholder-overlay.png
+        overlay_filter: 0.25
+        teaser: /assets/images/placeholder-teaser_thumbnail.png
+      toc: true
+      toc_icon: "far fa-list-alt"
+      toc_label: Table of Contents
+      toc_sticky: true

@@ -9,7 +9,7 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Elementals - Max Harris</title>
+<!-- begin _includes/seo.html --><title>Elementals | Max Harris</title>
 <meta name="description" content="An action platformer centered on spellcasting and magic">
 
 
@@ -36,7 +36,7 @@
 
 
 
-  <meta property="article:published_time" content="2023-12-15T16:46:13-05:00">
+  <meta property="article:published_time" content="2023-12-15T19:36:01-05:00">
 
 
 
@@ -223,7 +223,7 @@
     
       
       
-      <p><strong>Tools</strong></p>
+      <p><strong>Tools:</strong></p>
 
       
     
@@ -252,7 +252,7 @@
         
           <aside class="sidebar__right sticky">
             <nav class="toc">
-              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> Table of Contents</h4></header>
+              <header><h4 class="nav__title"><i class="fas fa-far fa-list-alt"></i> Table of Contents</h4></header>
               <ul class="toc__menu"><li><a href="#concept">Concept</a></li><li><a href="#technical-highlights">Technical Highlights</a></li><li><a href="#challenges-and-solutions">Challenges and Solutions</a></li><li><a href="#conclusion">Conclusion</a></li></ul>
 
             </nav>
@@ -268,7 +268,9 @@
 
 <h1 id="concept">Concept</h1>
 
-<p>The gameplay concept was an action platformer centered on spellcasting and magic. The player would control one of 5 elements and fight elemental enemies. Enemies drop mana when they are defeated, which the player uses to collect elemental mana to fuel spells. All elements use a shared supply of mana, but the player can only collect mana matching their current element. The original jam entry was missing a number of key features: it only had one level, no sound, there were no win/lose conditions implemented, and no enemy pathfinding. The project objectives were to:</p>
+<p>The gameplay concept was an action platformer centered on spellcasting and magic. The player would control one of 5 elements and fight elemental enemies. Enemies drop mana when they are defeated, which the player uses to collect elemental mana to fuel spells. All elements use a shared supply of mana, but the player can only collect mana matching their current element. The original jam entry was missing a number of key features: it only had one level, no sound, there were no win/lose conditions implemented, and no enemy pathfinding.</p>
+
+<p>The project objectives were to:</p>
 
 <ol>
   <li>Reimplement the game in Unity</li>
@@ -289,8 +291,6 @@
 There are several valuable points to notice about this diagram. First, none of the blue systems classes reference each other at all. <code class="language-plaintext highlighter-rouge">CharacterMove</code> only needs to know that the input data exists, it doesn’t know or care how it is being updated.<br />
 Secondly, it’s important to realize that each data element is only written from one class within a system. I added notes to the movement state so it would be clear that reads and writes are not in conflict with each other between the <code class="language-plaintext highlighter-rouge">CharacterAnimator</code> and the <code class="language-plaintext highlighter-rouge">CharacterMove</code>. <code class="language-plaintext highlighter-rouge">CharacterAnimator</code> only writes to certain data that <code class="language-plaintext highlighter-rouge">CharacterMove</code> reads from.  The data that character movement writes to, is read-only for the animator. You can see this in the code snippet below showing the animator’s update function. This rule makes this system easy to understand and debug because there is always a single point of authorship for any piece of data.</p>
 
-<p><code class="language-plaintext highlighter-rouge">CharacterAnimator Update()</code> method showing the animator writing to and reading from the Character movement state data.</p>
-
 <div class="language-cs highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">void</span> <span class="nf">Update</span><span class="p">()</span>
 <span class="p">{</span>
     <span class="c1">//animator reads only from character movement state </span>
@@ -303,7 +303,7 @@ Secondly, it’s important to realize that each data element is only written fro
     <span class="n">_state</span><span class="p">.</span><span class="n">PhysicsMode</span> <span class="p">=</span> <span class="p">(</span><span class="n">InteractionPhysicsMode</span><span class="p">)</span><span class="n">_anim</span><span class="p">.</span><span class="nf">GetInteger</span><span class="p">(</span><span class="n">InteractionPhysMode</span><span class="p">);</span>
 </code></pre></div></div>
 
-<p>Additionally the <code class="language-plaintext highlighter-rouge">CharacterAnimator</code> writes to data inside its <code class="language-plaintext highlighter-rouge">OnAnimatorMove()</code> function to store root motion information. It’s important that the animator does not actually apply the root motion directly, because that would mean velocity is being authored in two places.</p>
+<p>Additionally the <code class="language-plaintext highlighter-rouge">CharacterAnimator</code> writes to data inside its <code class="language-plaintext highlighter-rouge">OnAnimatorMove()</code> function to store root motion information. It’s important that the animator does not apply the root motion directly, because that would mean velocity is being authored in two places.</p>
 
 <div class="language-cs highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">private</span> <span class="k">void</span> <span class="nf">OnAnimatorMove</span><span class="p">()</span>
 <span class="p">{</span>
@@ -363,13 +363,13 @@ Secondly, it’s important to realize that each data element is only written fro
 
 <h1 id="challenges-and-solutions">Challenges and Solutions</h1>
 
-<p>Bridging the skill gap between myself and the other two programmers was not an easy task. I had to implement most of the primary systems myself, but I wanted the other two CS students to get opportunities to learn and contribute to the project. Students were assigned to groups based on skill level, attempting to achieve a balance of advanced and beginner skill levels on each team. Initially our group was assigned with 4 members. I was assigned as one of the advanced members along with another programmer, leaving two remaining beginner students.  Unfortunately, the other advanced programmer left our team leaving me as the only advanced programmer on the team. Having never worked on a project of this scale, it was a significant challenge making the work accessible to all team members without taking them completely out of the programming tasks. I had to find a solution that would allow me to implement the more sophisticated systems without those systems interfering with and overwhelming the junior programmers.</p>
+<p>Bridging the skill gap between myself and the other two programmers was not an easy task. I had to implement most of the primary systems myself, but I wanted the other two CS students to get opportunities to learn and contribute to the project. Students were assigned to groups based on skill level, attempting to achieve a balance of advanced and beginner skill levels on each team. Initially our group was assigned with four members. I was assigned as one of the advanced members along with another programmer, leaving two remaining beginner students.  Unfortunately, the other advanced programmer left our team leaving me as the only advanced programmer on the team. Having never worked on a project of this scale, it was a significant challenge making the work accessible to all team members without taking them completely out of the programming tasks. I had to find a solution that would allow me to implement the more sophisticated systems without those systems interfering with and overwhelming the junior programmers.</p>
 
 <p>Implementing the loose coupling described above allowed me to give the junior programmers systems to implement without them needing to concern themselves with the complex ramifications of the related systems. However, we still had to rely on some peer programming where I could coach them for some of the problems, especially at the very beginning. I tried to find as many avenues for the other programmers to contribute and develop the project beyond programming directly. I had to record a number of tutorials for team members to reference as well when working on various tasks. By the end of the project, each person had contributed at least one level that they had authored completely themselves and contributed numerous prefabs to the project, as well as contributing various amounts of code.</p>
 
 <h1 id="conclusion">Conclusion</h1>
 
-<p>This was my first taste of real project management. Before this, and some after as well, most projects had either been personal with no real deadlines or I was not in charge of leading and organizing the project. It was definitely taxing for me at the time, because I had to spend a lot of time working out ways for the inexperienced programmers to learn and be part of the project. At the end of the project I was slightly disappointed that I hadn’t gotten as much time to really experiment and iterate on the game mechanics. However, coming back to now I’ve already made some additions and improvements. Opening up after 2 years, I found the project quite easy to work with and easy to extend which is a testament to the overall quality and dedication to clean code.</p>
+<p>This was my first taste of real project management. Before this, and some after as well, most projects had either been personal with no real deadlines or I was not in charge of leading and organizing the project. It was definitely taxing for me at the time, because I had to spend a lot of time working out ways for the inexperienced programmers to learn and be part of the project. At the end of the project I was slightly disappointed that I hadn’t gotten as much time to really experiment and iterate on the game mechanics. However, coming back to now I’ve already made some additions and improvements. Opening up after two years, I found the project quite easy to work with and easy to extend which is a testament to the overall quality and dedication to clean code.</p>
 
         
       </section>
