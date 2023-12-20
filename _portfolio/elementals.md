@@ -2,8 +2,8 @@
 title: Elementals
 excerpt: "An action platformer centered on spellcasting and magic"
 header:
-  overlay_image: /assets/images/elementals/elementals-header-overlay-2.png
-  overlay_filter: rgba(0, 117, 27, 0.25)
+  overlay_image: /assets/images/elementals/elementals-header-overlay-2-copy.jpg
+  overlay_filter: rgba(0, 82, 19, 0.4)
   teaser: /assets/images/elementals/elementals-teaser_thumbnail.png
   actions:
     - label: "Play Online"

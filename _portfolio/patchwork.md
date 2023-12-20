@@ -2,7 +2,7 @@
 title: Patchwork
 excerpt: "[WIP] A collection of 3D dream worlds. It is based on an open-ended walking simulator."
 header:
-  overlay_image: /assets/images/patchwork/patch-overlay-horizon.png
+  overlay_image: /assets/images/patchwork/patch-overlay-horizon.jpg
   overlay_filter: 0.25
   teaser: /assets/images/patchwork/patch-overlay-winding-path_thumbnail.png
   show_overlay_excerpt: false
