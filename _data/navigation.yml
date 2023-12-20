@@ -1,5 +1,5 @@
 main:
-  - title: "About"
+  - title: "Home"
     url: /index.html
   - title: "Portfolio"
     url: /portfolio/

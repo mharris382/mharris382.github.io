@@ -5,12 +5,15 @@ header:
   overlay_image: /assets/images/elementals/elementals-header-overlay-2.png
   overlay_filter: 0.25
   teaser: /assets/images/elementals/elementals-teaser_thumbnail.png
+  actions:
+    - label: "Web Build"
+      url: "https://tyranicgoat.itch.io/elementals"
+    - label: "Github"
+      url: "https://github.com/mharris382/Software-Engineering-Capstone"
 sidebar:   
-  - text: "[Github](https://github.com/mharris382/Software-Engineering-Capstone){: .btn .btn--primary}"
-  - text: "[Web Build](https://tyranicgoat.itch.io/elementals){: .btn .btn--primary}"
   - title: "Role"
-    text: "Programmer, Project Manager, Game Designer"
-  - title: "Project Info"
+    text: "Project Manager, Programmer, Game Designer"
+  - title: "Project Information"
   - text: "Feb 2022 - May 2022"
   - text: "**Engine:** Unity"
   - text: "**Language:** C#"

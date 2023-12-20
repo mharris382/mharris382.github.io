@@ -1,14 +1,15 @@
 ---
 title: Patchwork
-excerpt: "[insert a tagline here]"
+excerpt: "[WIP] A collection of 3D dream worlds. It is based on an open-ended walking simulator."
 header:
   overlay_image: /assets/images/patchwork/patch-overlay-horizon.png
   overlay_filter: 0.25
   teaser: /assets/images/patchwork/patch-overlay-winding-path_thumbnail.png
+  show_overlay_excerpt: false
 sidebar:   
   - title: "Role"
     text: Lead Programmer, Technical Artist, Level Designer, Modeling, and Project Manager 
-  - title: "Project Info"
+  - title: "Project Information"
   - text: "Nov 2023 - Current"
   - text: "**Engine:** Unreal Engine 5.3"
   - text: "**Language:** Blueprints, Material Nodes"

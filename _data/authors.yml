@@ -1,0 +1,14 @@
+Only Links:
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:mharris382@gmail.com"
+    - label: "LinkedIn"
+      icon: "fab fa-linkedin"
+      url: "https://www.linkedin.com/in/mharris382" 
+    - label: "itch.io"
+      icon: "fab fa-itch-io"
+      url: "https://tyranicgoat.itch.io/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/mharris382"
