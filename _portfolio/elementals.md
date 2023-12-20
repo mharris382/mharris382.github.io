@@ -3,10 +3,10 @@ title: Elementals
 excerpt: "An action platformer centered on spellcasting and magic"
 header:
   overlay_image: /assets/images/elementals/elementals-header-overlay-2.png
-  overlay_filter: 0.25
+  overlay_filter: rgba(134, 230, 108, 0.25)
   teaser: /assets/images/elementals/elementals-teaser_thumbnail.png
   actions:
-    - label: "Web Build"
+    - label: "Play Online"
       url: "https://tyranicgoat.itch.io/elementals"
     - label: "Github"
       url: "https://github.com/mharris382/Software-Engineering-Capstone"
