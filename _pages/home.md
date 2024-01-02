@@ -5,6 +5,11 @@ permalink: /index.html
 header:
     overlay_color: "#0092ca"
     overlay_filter: 0.25
+    actions:
+        - label: "Itch.io"
+          url: "https://tyranicgoat.itch.io/"
+        - label: "Github"
+          url: "https://github.com/mharris382"
 excerpt: "Game developer and 3D generalist"
 feature_row:
     - image_path: /assets/images/elementals/elementals-teaser_thumbnail.png
