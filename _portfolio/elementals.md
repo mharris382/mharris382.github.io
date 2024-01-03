@@ -20,6 +20,12 @@ sidebar:
   - text: "**Tools:**"
   - text: "Cinemachine plugin"
 images_folder: "/assets/images/elementals/"
+diagram_row:
+    - image_path: /assets/images/elementals/character-movement-system-diagram.png
+      excerpt: "A key architectural design decision was to separate Monobehaviours into two categories: systems and data. The data components would not contain any (or very limited) methods or functionality. The diagram shows how the character movement system was implemented using this shared data component pattern."
+      url: /assets/images/elementals/
+      btn_label: "View Diagram"
+      btn_class: btn--primary
 ---
 
 This was my senior capstone project. I had made a simple platformer game during the second annual Go Godot jam and shared it with my capstone team suggesting that we remake and improve it in Unity. I wanted to finish the gameplay loop that had been prototyped during that jam.
@@ -39,6 +45,10 @@ The project objectives were to:
 # Technical Highlights
 
 This project was based on a previous project, my portfolio fighting platformer. The complexity of the combat system was reduced slightly to accommodate the ability of the other more junior programmers; but the core architecture was brought over. A key architectural design decision was to separate Monobehaviours into two categories: systems and data. The data components would not contain any (or very limited) methods or functionality.
+
+## Shared Data Component Pattern
+
+{% include feature_row id="diagram_row" type="left" %}
 
 <figure>
 	<a href="{{page.images_folder}}character-movement-system-diagram.png"><img src="{{page.images_folder}}character-movement-system-diagram.png"></a>

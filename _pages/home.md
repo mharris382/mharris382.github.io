@@ -1,7 +1,7 @@
 --- 
 layout: single
+permalink: /
 classes: "wide"
-permalink: /index.html
 header:
     overlay_color: "#0092ca"
     overlay_filter: 0.25
