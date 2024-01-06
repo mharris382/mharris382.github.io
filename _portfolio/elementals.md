@@ -23,7 +23,7 @@ images_folder: "/assets/images/elementals/"
 diagram_row:
     - image_path: /assets/images/elementals/character-movement-system-diagram.png
       excerpt: "A key architectural design decision was to separate Monobehaviours into two categories: systems and data. The data components would not contain any (or very limited) methods or functionality. The diagram shows how the character movement system was implemented using this shared data component pattern."
-      url: /assets/images/elementals/
+      url: /assets/images/elementals/character-movement-system-diagram.png
       btn_label: "View Diagram"
       btn_class: btn--primary
 ---
@@ -49,11 +49,6 @@ This project was based on a previous project, my portfolio fighting platformer. 
 ## Shared Data Component Pattern
 
 {% include feature_row id="diagram_row" type="left" %}
-
-<figure>
-	<a href="{{page.images_folder}}character-movement-system-diagram.png"><img src="{{page.images_folder}}character-movement-system-diagram.png"></a>
-	<figcaption>Character movement system diagram.</figcaption>
-</figure>
 
 The diagram shows how the character movement system was implemented using this shared data component pattern. The yellow class, `CharacterState` (MonoBehaviour) is the data container component. In this example it also has two subcontainers (regular classes) for specific sets of data. Specifically the data holding the desired movement state (Input) and the data holding the actual movement state. The blue classes (MonoBehaviour) are systems that either read and/or write to data held by the `CharacterState` component.  
 There are several valuable points to notice about this diagram. First, none of the blue systems classes reference each other at all. `CharacterMove` only needs to know that the input data exists, it doesn’t know or care how it is being updated.  
