@@ -6,7 +6,6 @@ excerpt: "A game developer and 3D generalist."
 header:
     overlay_image: /assets/images/placeholder-overlay.png
     overlay_filter: linear-gradient(rgba(255, 0, 0, 0.5), rgba(0, 255, 255, 0.5))
-
 feature_row:
     - image_path: /assets/images/elementals/elementals-teaser_thumbnail.png
       title: "Elementals"
