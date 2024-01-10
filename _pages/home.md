@@ -24,6 +24,12 @@ feature_row:
       url: "/portfolio/patchwork"
       btn_class: btn--inverse
       btn_label: "Read More"
+    - image_path: /assets/images/steam-eagles/SE_thumbnail_teaser.jpg
+      title: "Steam Eagles"
+      excerpt: "**Unity**. 2D crafting sandbox with a heavy emphasis on freedom and creativity, combined with physics systems and gas simulations."
+      url: "/portfolio/steam-eagles"
+      btn_class: btn--inverse
+      btn_label: "Read More"
 author: Only Links
 author_profile: true
 ---
