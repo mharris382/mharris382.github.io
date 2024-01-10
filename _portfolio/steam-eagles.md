@@ -1,10 +1,10 @@
 ---
 title: Steam Eagles
-excerpt: ""
+excerpt: "2D crafting sandbox with a heavy emphasis on freedom and creativity, combined with physics systems and gas simulations."
 header:
-  overlay_image: /assets/images/elementals/elementals-header-overlay-2-copy.jpg
-  overlay_filter: rgba(0, 82, 19, 0.4)
-  teaser: /assets/images/elementals/elementals-teaser_thumbnail.png
+  overlay_image: /assets/images/steam-eagles/blurry-gear-background.png
+  teaser: /assets/images/steam-eagles/SE_thumbnail_teaser.jpg
+  show_overlay_excerpt: false
   actions:
     - label: "Itch Page"
       url: "https://tyranicgoat.itch.io/steam-eagles"
