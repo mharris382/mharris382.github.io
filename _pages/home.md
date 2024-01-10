@@ -14,13 +14,13 @@ excerpt: "Game developer and 3D generalist"
 feature_row:
     - image_path: /assets/images/elementals/elementals-teaser_thumbnail.png
       title: "Elementals"
-      excerpt: "A 2D action platformer. This game was created in Godot for a game jam. Later it was reimplemented and extended in Unity."
+      excerpt: "**Unity**. A 2D action platformer. This originally a Godot game jam project. Later it was reimplemented and extended in Unity."
       url: "/portfolio/elementals"
       btn_label: "Read More"
       btn_class: "btn--inverse"
     - image_path: /assets/images/patchwork/patch-overlay-winding-path_thumbnail.png
       title: "Patchwork"
-      excerpt: "This game is being created with teammates from around the world. It is an Unreal game based off of a walking simulator and will be a submission for a game jam."
+      excerpt: "**Unreal Engine**. 3D puzzles and exploration. The player explores unique dreamworlds trying to find and help The Dreamer."
       url: "/portfolio/patchwork"
       btn_class: btn--inverse
       btn_label: "Read More"
