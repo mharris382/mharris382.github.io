@@ -11,6 +11,12 @@ var store = [{
         "url": "/portfolio/patchwork/",
         "teaser": "/assets/images/patchwork/patch-overlay-winding-path_thumbnail.png"
       },{
+        "title": "Steam Eagles",
+        "excerpt":"Steam Eagles is a 2D crafting sandbox with a heavy emphasis on freedom and creativity, combined with physics systems and gas simulations. The project was sponsored as an independent research project at the University of Illinois. Key Features Custom Entity save/load system built using reflection and dependency injection Inventory and...","categories": [],
+        "tags": [],
+        "url": "/portfolio/steam-eagles/",
+        "teaser": "/assets/images/elementals/elementals-teaser_thumbnail.png"
+      },{
         "title": "Test_project",
         "excerpt":"Test Project   Here it is! A test project for the Minimal Mistakes theme. Whoop de doo.  ","categories": [],
         "tags": [],
