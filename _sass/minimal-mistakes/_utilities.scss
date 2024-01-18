@@ -225,6 +225,11 @@ body:hover .visually-hidden button {
     color: $dribbble-color;
   }
 
+  .fa-envelope,
+  .fa-square-envelope {
+    color: $itchio-color;
+  }
+
   .fa-facebook,
   .fa-facebook-square,
   .fa-facebook-f {
@@ -251,6 +256,10 @@ body:hover .visually-hidden button {
 
   .fa-instagram {
     color: $instagram-color;
+  }
+
+  .fa-itch-io {
+    color: $itchio-color;
   }
 
   .fa-keybase {

@@ -35,7 +35,6 @@ author_profile: true
 ---
 
 <section class="page__share">
-
   <a href="https://www.linkedin.com/in/mharris382" class="btn btn--linkedin" target="_blank"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 
   <a href="https://www.linkedin.com/in/mharris382" class="btn btn--github" target="_blank"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span> Github</span></a>
@@ -43,6 +42,9 @@ author_profile: true
   <a href="https://tyranicgoat.itch.io/" class="btn btn--itchio" target="_blank"><i class="fab fa-fw fa-itch-io" aria-hidden="true"></i><span> itch.io</span></a>
 </section>
 
+
+
+---
 
 As an experienced programmer, I've delved into the intricacies of game mechanics, procedural content generation, and AI. For every project I work on, I always strive to achieve efficiency not only for my own work, but for the artists, writers, and designers I am working with. I am keen on developing tools that make my life easier and help other teammates do their jobs better as well, with the overall goal being to make the end result better.
 

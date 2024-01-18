@@ -41,7 +41,8 @@
   (twitter, $twitter-color),
   (linkedin, $linkedin-color),
   (itchio, $itchio-color),
-  (github, $github-color);
+  (github, $github-color),
+  (email, $primary-color);
 
   @each $buttoncolor, $color in $buttoncolors {
     &--#{$buttoncolor} {
