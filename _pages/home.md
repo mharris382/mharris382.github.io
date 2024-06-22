@@ -18,12 +18,6 @@ feature_row:
       url: "/portfolio/elementals"
       btn_label: "Read More"
       btn_class: "btn--inverse"
-    - image_path: /assets/images/patchwork/patch-overlay-winding-path_thumbnail.png
-      title: "Patchwork"
-      excerpt: "**Unreal Engine**. 3D puzzles and exploration. The player explores unique dreamworlds trying to find and help The Dreamer."
-      url: "/portfolio/patchwork"
-      btn_class: btn--inverse
-      btn_label: "Read More"
     - image_path: /assets/images/steam-eagles/SE_thumbnail_teaser.jpg
       title: "Steam Eagles"
       excerpt: "**Unity**. 2D crafting sandbox with a heavy emphasis on freedom and creativity, combined with physics systems and gas simulations."

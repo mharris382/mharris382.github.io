@@ -146,6 +146,9 @@ collections:
   portfolio:
     output: true
     permalink: /:collection/:path/
+  drafts:
+    output: false
+    permalink: /:collection/:path/
 
 # mimic GitHub Pages with --safe
 whitelist:
