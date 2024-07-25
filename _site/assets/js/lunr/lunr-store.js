@@ -5,6 +5,12 @@ var store = [{
         "url": "/drafts/patchwork/",
         "teaser": "/assets/images/patchwork/patch-overlay-winding-path_thumbnail.png"
       },{
+        "title": "Dreamwalker",
+        "excerpt":"Dreamwalker is a first person action adventure game, set in the world of dreams. I was attracted to this project because the opportunity to build worlds that don’t fully adhere to the laws of reality. What Did I Contribute? If you aren’t interested in diving into all the nitty gritty...","categories": [],
+        "tags": [],
+        "url": "/portfolio/dreamwalker/",
+        "teaser": "/assets/images/placeholder-teaser_thumbnail.png"
+      },{
         "title": "Elementals",
         "excerpt":"This was my senior capstone project. I had made a simple platformer game during the second annual Go Godot jam and shared it with my capstone team suggesting that we remake and improve it in Unity. I wanted to finish the gameplay loop that had been prototyped during that jam....","categories": [],
         "tags": [],
