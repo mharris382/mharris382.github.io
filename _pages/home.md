@@ -12,6 +12,12 @@ header:
           url: "https://github.com/mharris382"
 excerpt: "Game developer and 3D generalist"
 feature_row:
+    - image_path: /assets/images/dreamwalker/dreamwalker-thumb-wide.png
+      title: "Dreamwalker"
+      excerpt: "**Unreal 5**. A 3D adventure across mutable dreams."
+      url: "/portfolio/dreamwalker"
+      btn_label: "Read More"
+      btn_class: "btn--inverse"
     - image_path: /assets/images/elementals/elementals-teaser_thumbnail.png
       title: "Elementals"
       excerpt: "**Unity**. A 2D action platformer. This originally a Godot game jam project. Later it was reimplemented and extended in Unity."
