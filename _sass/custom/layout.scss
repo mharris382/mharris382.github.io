@@ -1,0 +1,58 @@
+$spacing-unit: 20px;
+$on-laptop: 1080px;
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 2fr minmax(300px, $on-laptop) 2fr;
+    gap: $spacing-unit;
+    justify-content: center;
+    margin: 20px $spacing-unit;
+    max-width: calc(100% - 2 * $spacing-unit);
+}
+
+.sidebar__toc {
+    margin-bottom: 1em;
+
+    @include breakpoint($large) {
+        position: absolute;
+        top: 0;
+        width: $right-sidebar-width-narrow;
+        z-index: 10;
+
+        &.sticky {
+            @include clearfix();
+            position: -webkit-sticky;
+            position: sticky;
+            top: 2em;
+            float: right;
+
+            .toc {
+                .toc__menu {
+                    overflow-y: auto;
+                    max-height: calc(100vh - 7em);
+                }
+            }
+        }
+    }
+
+    @include breakpoint($x-large) {
+        width: $right-sidebar-width;
+    }
+}
+
+#main-wide {
+    @include clearfix;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1em;
+    padding-right: 1em;
+    -webkit-animation: $intro-transition;
+    animation: $intro-transition;
+    max-width: 100%;
+    -webkit-animation-delay: 0.15s;
+    animation-delay: 0.15s;
+
+    @include breakpoint($x-large) {
+        max-width: 80em;
+    }
+}
