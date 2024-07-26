@@ -145,7 +145,7 @@ collections:
     output: true
     permalink: /:collection/:path/
   drafts:
-    output: true
+    output: false
     permalink: /:collection/:path/
 
 # mimic GitHub Pages with --safe
