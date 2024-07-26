@@ -22,11 +22,11 @@ layout: default
     <div class="content-grid">
         {% include sidebar.html %}
 
-        <main style="max-width: 80em;">
+        <main>
             {{ content }}
         </main>
 
-        
+        {% if page.toc %}
         <div class="sidebar__toc {% if page.toc_sticky %}sticky{% endif %}">
             <nav class="toc" style="position: sticky; top: 2em;">
                 <header>
@@ -36,15 +36,7 @@ layout: default
                 {% include toc.html sanitize=true html=content h_min=1 h_max=6 class="toc__menu" skip_no_ids=true %}
             </nav>
         </div>
-        
-        
-        <!--div>
-            <table class="table-of-contents" id="toc">
-                <tr>
-                    <th>Contents</th>
-                </tr>
-            </table>
-        </div-->
+        {% endif %}
     </div>
 </div>
 

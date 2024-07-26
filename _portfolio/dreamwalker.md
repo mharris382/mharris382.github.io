@@ -1,16 +1,11 @@
 ---
-layout: single
+layout: project
 title: Dreamwalker
 excerpt: "A journey across mutable dreams"
-teaser: /assets/images/dreamwalker/dreamwalker-thumb.png
 header:
+  teaser: /assets/images/dreamwalker/dreamwalker-thumb.png
   overlay_image: /assets/images/dreamwalker/dreamwalker-header.png
   overlay_filter: 0.25
-  actions:
-    - label: "Play Online"
-      url: "https://tyranicgoat.itch.io/elementals"
-    - label: "Github"
-      url: "https://github.com/mharris382/Software-Engineering-Capstone"
 sidebar:
     - title: "Role"
     - text: "Lead Programmer, Technical Artist, Level Designer, Modeling, and Project Manager" 
@@ -235,4 +230,4 @@ Once I felt I had a fairly comprehensive understanding of the plugin, I then nee
 
 {% include gallery id="feature_dialogue_google" type="center" caption="Converting a Google Sheet into an Unreal datatable" %}
 
-[1]: <https://www.unrealengine.com/marketplace/en-US/product/defender-animated-dialogue-system> "this marketplace asset"
+[1]: <https://www.unrealengine.com/marketplace/en-US/product/defender-animated-dialogue-system> "dialogue system asset"
