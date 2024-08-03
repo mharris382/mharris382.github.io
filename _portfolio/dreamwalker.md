@@ -8,13 +8,13 @@ header:
   overlay_filter: 0.25
 sidebar:
     - title: "Role"
-    - text: "Lead Programmer, Technical Artist, Level Designer, Modeling, and Project Manager" 
+    - text: "Lead Programmer, Technical Artist, Designer
     - title: "Project Information"
     - text: "Nov 2023 - Current"
     - text: "**Engine:** Unreal Engine 5.3"
     - text: "**Language:** Blueprints, Material Nodes"
     - text: "**Tools:**"
-    - text: "PCG Framework, Gaia, Blender, Miro, Google Sheets"
+    - text: "PCG Framework, Common UI, Gaia, Blender
 images_folder: assets/images/dreamwalker/
 feature_pcg_holes:
     - image_path: "/assets/images/dreamwalker/pcg-holes.png"
@@ -40,15 +40,11 @@ feature_dialogue_google:
 ---
 
 
-Dreamwalker is a first person action adventure game, set in the world of dreams. I was attracted to this project because the opportunity to build worlds that don't fully adhere to the laws of reality.
+Dreamwalker is a first person action adventure game, set in the world of dreams. I was attracted to this project because the opportunity to build worlds that don't fully adhere to the laws of reality.  In most of my previous projects my primary goal has been learning and improving my technical skills, while the goal of this project is to bring all those skills together and deliver a polished full length game.  Scope management has been a primary consideration for this project, but I have also been equally focused on building something that will stand out both in gameplay and aesthetics.  
+
+The one aspect of the project I would change if I could do it over would have been the choice to use only blueprints.  I choose not to use C++ initially to make it easier for the other members to use the project, and not require them to download visual studio in addition to unreal.  The second was that I did not anticipate the project extending beyond the duration of the Game Jam, so I thought blueprints would be sufficient.  ~~During the period of reorganization after the jam, I spent time to brush up on Unreal C++, but the current timeline means~~
 
 {% include video id="-D9cks-ZmRI" provider="youtube" %}
-
-# What Did I Contribute?
-
-If you aren't interested in diving into all the nitty gritty details below and just want a list of my contributions to the project, read on. 
-
-While this has been and still is very much a team project, I have been the main force behind 90% of the unreal engine work for this project. I am steadily onboarding other teammates in using unreal, but I am the guy who makes sure everything works, looks good, feels good, and gets finished on time.  
 
 # Top Technical Contributions
 
