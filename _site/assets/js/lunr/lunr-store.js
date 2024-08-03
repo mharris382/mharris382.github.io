@@ -6,7 +6,7 @@ var store = [{
         "teaser": "/assets/images/steam-eagles/SE_thumbnail_teaser.jpg"
       },{
         "title": "Dreamwalker",
-        "excerpt":"Dreamwalker is a first person action adventure game, set in the world of dreams. I was attracted to this project because the opportunity to build worlds that don’t fully adhere to the laws of reality. What Did I Contribute? If you aren’t interested in diving into all the nitty gritty...","categories": [],
+        "excerpt":"Dreamwalker is a first person action adventure game, set in the world of dreams. I was attracted to this project because the opportunity to build worlds that don’t fully adhere to the laws of reality. In most of my previous projects my primary goal has been learning and improving my...","categories": [],
         "tags": [],
         "url": "/portfolio/dreamwalker/",
         "teaser": "/assets/images/dreamwalker/dreamwalker-thumb.png"
