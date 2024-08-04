@@ -22,10 +22,4 @@ var store = [{
         "tags": [],
         "url": "/portfolio/steam-eagles/",
         "teaser": "/assets/images/steam-eagles/SE_thumbnail_teaser.jpg"
-      },{
-        "title": "Test_project",
-        "excerpt":"Test Project   Here it is! A test project for the Minimal Mistakes theme. Whoop de doo.  ","categories": [],
-        "tags": [],
-        "url": "/projects/test_project.html",
-        "teaser": null
-      }]
+      },]
