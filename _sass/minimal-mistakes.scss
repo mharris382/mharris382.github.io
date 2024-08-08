@@ -4,6 +4,9 @@
  * Licensed under MIT (https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE)
 */
 
+// Custom Scss
+@import "custom/variables";
+
 /* Variables */
 @import "minimal-mistakes/variables";
 
@@ -39,6 +42,5 @@
 @import "minimal-mistakes/sidebar";
 @import "minimal-mistakes/print";
 
-//
 @import "custom/layout";
-@import "custom/landing";
+@import "custom/home";

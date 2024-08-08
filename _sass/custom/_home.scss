@@ -1,0 +1,10 @@
+.layout--home-page {
+    .header-block {
+        margin-top: 1em;
+        font-size: $type-size-2;
+
+        @include breakpoint($small) {
+            font-size: $type-size-1;
+        }
+    }
+}
