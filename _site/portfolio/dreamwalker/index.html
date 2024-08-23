@@ -30,13 +30,13 @@
 
 
 
-  <meta property="og:image" content="http://localhost:4000/assets/images/dreamwalker/dreamwalker-header.png">
+  <meta property="og:image" content="http://localhost:4000/assets/images/dreamwalker/patch-overlay-horizon.jpg">
 
 
 
 
 
-  <meta property="article:published_time" content="2024-08-21T12:16:44-04:00">
+  <meta property="article:published_time" content="2024-08-23T16:06:13-04:00">
 
 
 
@@ -95,7 +95,7 @@
 
   </head>
 
-  <body class="layout--project">
+  <body class="layout--single">
     <nav class="skip-links">
   <ul>
     <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
@@ -138,7 +138,7 @@
 
     <div class="initial-content">
       
-
+  
 
 
 
@@ -147,7 +147,7 @@
 
 
 <div class="page__hero--overlay"
-  style=" background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('/assets/images/dreamwalker/dreamwalker-header.png');"
+  style=" background-image: linear-gradient(rgba(56, 12, 95, 0.5), rgba(56, 12, 95, 0.5)), url('/assets/images/dreamwalker/patch-overlay-horizon.jpg');"
 >
   
     <div class="wrapper">
@@ -175,11 +175,8 @@
 
 
 
-
-
-<div id="main-wide" role="main">
-    <div class="content-grid">
-        
+<div id="main" role="main">
+  
   <div class="sidebar sticky">
   
   
@@ -191,7 +188,7 @@
     
       
       
-      <p>Lead Programmer, Technical Artist, Designer</p>
+      <p>Lead Programmer, Technical Artist, Game Designer</p>
 
       
     
@@ -236,15 +233,33 @@
 
 
 
-        <main>
-            <p>Dreamwalker is a first person action adventure game, set in the world of dreams. I was attracted to this project because the opportunity to build worlds that don’t fully adhere to the laws of reality.  In most of my previous projects my primary goal has been learning and improving my technical skills, while the goal of this project is to bring all those skills together and deliver a polished full length game.  Scope management has been a primary consideration for this project, but I have also been equally focused on building something that will stand out both in gameplay and aesthetics.</p>
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Dreamwalker">
+    <meta itemprop="description" content="A journey across mutable dreams">
+    
+    
+
+    <div class="page__inner-wrap">
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-far fa-list-alt"></i> Table of Contents</h4></header>
+              <ul class="toc__menu"><li><a href="#top-technical-contributions">Top Technical Contributions</a><ul><li><a href="#other-contributions">Other Contributions</a></li></ul></li><li><a href="#procedural-tools-using-pcg">Procedural Tools Using PCG</a><ul><li><a href="#procedural-mushroom-forest">Procedural Mushroom Forest</a></li><li><a href="#pcg-designerartist-tools">PCG Designer/Artist Tools</a><ul><li><a href="#pcg-tools-feature-highlights">PCG Tools Feature Highlights</a></li></ul></li></ul></li><li><a href="#expanded-character-movement">Expanded Character Movement</a><ul><li><a href="#animations-and-head-bobbing">Animations and Head Bobbing</a></li><li><a href="#ledge-grab-and-ledge-climb">Ledge Grab and Ledge Climb</a></li><li><a href="#player-position-resets--fall-height">Player Position Resets &amp; Fall Height</a><ul><li><a href="#fall-height-system">Fall Height System</a></li></ul></li></ul></li><li><a href="#save-load-system">Save-Load System</a><ul><li><a href="#world-event-system">World Event System</a></li><li><a href="#unlocking-abilities">Unlocking Abilities</a><ul><li><a href="#bounce-mushroom-ability">Bounce Mushroom Ability</a></li></ul></li></ul></li><li><a href="#data-driven-gameplay-effect-system">Data-Driven Gameplay Effect System</a><ul><li><a href="#system-visuals">System Visuals</a></li></ul></li><li><a href="#dialogue-system-plugin">Dialogue System plugin</a><ul><li><a href="#customizing-the-plugin">Customizing the plugin</a></li><li><a href="#writing-pipeline-easy-authoring-for-writers">Writing Pipeline: Easy Authoring for Writers</a></li></ul></li><li><a href="#menu-system-settings-menu-and-common-ui-plugin">Menu System, Settings Menu, and Common UI Plugin</a><ul><li><a href="#settings-menu">Settings Menu</a></li></ul></li></ul>
+
+            </nav>
+          </aside>
+        
+        <p>Dreamwalker is a first person action adventure game, set in the world of dreams. I was attracted to this project because the opportunity to build worlds that don’t fully adhere to the laws of reality.  In most of my previous projects my primary goal has been learning and improving my technical skills, while the goal of this project is to bring all those skills together and deliver a polished full length game.  Scope management has been a primary consideration for this project, but I have also been equally focused on building something that will stand out both in gameplay and aesthetics.</p>
 
 <p>The one aspect of the project I would change if I could do it over would have been the choice to use only blueprints.  I choose not to use C++ initially to make it easier for the other members to use the project, and not require them to download visual studio in addition to unreal.  The second was that I did not anticipate the project extending beyond the duration of the Game Jam, so I thought blueprints would be sufficient.</p>
 
 <!-- Courtesy of embedresponsively.com //-->
 
 <div class="responsive-video-container">
-    <iframe src="https://www.youtube-nocookie.com/embed/-D9cks-ZmRI" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+    <iframe src="https://www.youtube-nocookie.com/embed/lj6Z7pYfPn4" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
   </div>
 
 <h1 id="top-technical-contributions">Top Technical Contributions</h1>
@@ -270,6 +285,13 @@
 <p>Early in the project, when the game was still planned as a simple exploration driven walking simulator, I wanted to really make the world stand out in its size and scope.</p>
 
 <h2 id="procedural-mushroom-forest">Procedural Mushroom Forest</h2>
+
+<!-- Courtesy of embedresponsively.com //-->
+
+<div class="responsive-video-container">
+    <iframe src="https://www.youtube-nocookie.com/embed/B3W4-clTR8Y" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+  </div>
+
 <p>This mushroom forest is one of my favorite personal achievements on this project. It was the challenge of this forest which brought my skills with PCG and procedural generation to the next level. The prior level, the paper desert, was signifantly less detailed than a photorealistic mushroom forest scene. To limit the scope of this task, I gave myself the limitations of not using any trees. I approached this challenge by reverse engineering the PCG sample project (Electric Dreams). I attempted to translate the techniques used to create that environment to the one I was trying to create. I also worked with the audio engineer to make it so that the forest would automatically generate correctly placed audio for the rivers and lakes.</p>
 
 <h2 id="pcg-designerartist-tools">PCG Designer/Artist Tools</h2>
@@ -416,33 +438,6 @@ Grabbing dynamic platforms was slightly trickier. I tried a few techniques to ac
 <figure class="">
   <img src="/assets/images/dreamwalker/spore-visual-decoupling.gif" alt="Spore Visual Decoupling" /></figure>
 
-<h2 id="spore-hud-element">Spore HUD Element</h2>
-<p>After playtesting we agreed that the player should also have a HUD element that can show all their current active effects as well as how much longer the effect will last.</p>
-
-<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">On</span> <span class="n">Overlap</span> <span class="n">Begin</span><span class="p">(</span><span class="n">actor</span><span class="p">)</span><span class="o">:</span>
-    <span class="n">spore_type</span> <span class="o">=</span> <span class="n">handle</span><span class="p">.</span><span class="n">table</span><span class="p">.</span><span class="n">get_row</span><span class="p">(</span><span class="n">handle</span><span class="p">.</span><span class="n">row_name</span><span class="p">)</span>
-    <span class="n">spore_type_class</span> <span class="o">=</span> <span class="n">spore_type</span><span class="p">.</span><span class="n">behavior_class</span>
-    
-    <span class="c1">//check if spore was instantiated on this actor by another region</span>
-    <span class="n">spore_class_inst</span> <span class="o">=</span> <span class="n">actor</span><span class="p">.</span><span class="n">get_component_of_class</span><span class="p">(</span><span class="n">spore_type_class</span><span class="p">)</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">spore_class_inst</span> <span class="o">==</span> <span class="n">null</span><span class="p">)</span><span class="o">:</span>
-        <span class="n">spore_class_inst</span> <span class="o">=</span> <span class="n">actor</span><span class="p">.</span><span class="n">add_component</span><span class="p">(</span><span class="n">spore_type_class</span><span class="p">)</span>
-    
-    <span class="n">current_overlaps</span><span class="p">.</span><span class="n">add</span><span class="p">(</span><span class="n">actor</span><span class="p">,</span> <span class="n">spore_class_inst</span><span class="p">)</span>
-
-<span class="n">Tick</span><span class="p">(</span><span class="n">delta</span><span class="p">)</span><span class="o">:</span>
-    <span class="k">for</span> <span class="n">each</span> <span class="n">key_value_pair</span> <span class="n">in</span> <span class="n">current_overlaps</span><span class="o">:</span>
-        <span class="n">spore_inst</span> <span class="o">=</span> <span class="n">key_value_pair</span><span class="p">.</span><span class="n">value</span>
-        <span class="n">amount</span> <span class="o">=</span> <span class="n">compute_toxicity_delta_for_spore</span><span class="p">(</span><span class="n">delta</span><span class="p">)</span>
-        <span class="n">current_tox</span> <span class="o">=</span> <span class="n">spore_inst</span><span class="p">.</span><span class="n">toxicity</span>
-        <span class="n">current_tox</span> <span class="o">+=</span> <span class="n">amount</span>
-        <span class="n">current_tox</span> <span class="o">=</span> <span class="n">clamp</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">current_tox</span><span class="p">)</span>
-        <span class="n">spore_inst</span><span class="p">.</span><span class="n">toxicity</span> <span class="o">=</span> <span class="n">current_tox</span>
-
-<span class="n">On</span> <span class="n">Overlap</span> <span class="n">End</span><span class="p">(</span><span class="n">actor</span><span class="p">)</span><span class="o">:</span>
-    <span class="k">if</span> <span class="n">current_overlaps</span><span class="p">.</span><span class="n">contains</span><span class="p">(</span><span class="n">actor</span><span class="p">)</span>
-</code></pre></div></div>
-
 <h1 id="dialogue-system-plugin">Dialogue System plugin</h1>
 <p>I can’t take complete credit for the dialogue system in this game, the majority of the system is provided by <a href="https://www.unrealengine.com/marketplace/en-US/product/defender-animated-dialogue-system" title="dialogue system asset">this marketplace asset</a>. However, I did have to do a fair amount of work to integrate it properly. I also implemented my own customizations to improve the system. The plugin was provided as a full game kit not a standalone plugin, so I needed to reverse engineer much of the project to extract the code I needed.</p>
 
@@ -496,24 +491,41 @@ Grabbing dynamic platforms was slightly trickier. I tried a few techniques to ac
 <p>All the of game’s settings are stored in a save file, separate from the gameplay save file. Settings are loaded immediately, and are globaly acessible by any class through the Game Instance. Each category of the settings menu is a widget that inherits from a base class. Using a dirty flag, the root menu class tracks whether or not settings have been altered. This allows the root settings menu class to prompt the player to either keep or discard their changes when they leave the menu. This feature is very important because players on lower end machines could set their settings too high, causing their frame rate to drop to near zero. If this happens, it becomes near impossible to navigate the menu and revert the settings. The prompt and the countdown timer solve this issue because it will automatically revert to the previous settings if the player fails to apply their changes.</p>
 
 
-        </main>
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
 
         
-        <div class="sidebar__toc sticky">
-            <nav class="toc" style="position: sticky; top: 2em;">
-                <header>
-                    <h4 class="nav__title"><i class="fas fa-far fa-list-alt"></i> Table of Contents</h4>
-                </header>
-                <ul class="toc__menu"><li><a href="#top-technical-contributions">Top Technical Contributions</a><ul><li><a href="#other-contributions">Other Contributions</a></li></ul></li><li><a href="#procedural-tools-using-pcg">Procedural Tools Using PCG</a><ul><li><a href="#procedural-mushroom-forest">Procedural Mushroom Forest</a></li><li><a href="#pcg-designerartist-tools">PCG Designer/Artist Tools</a><ul><li><a href="#pcg-tools-feature-highlights">PCG Tools Feature Highlights</a></li></ul></li></ul></li><li><a href="#expanded-character-movement">Expanded Character Movement</a><ul><li><a href="#animations-and-head-bobbing">Animations and Head Bobbing</a></li><li><a href="#ledge-grab-and-ledge-climb">Ledge Grab and Ledge Climb</a></li><li><a href="#player-position-resets--fall-height">Player Position Resets &amp; Fall Height</a><ul><li><a href="#fall-height-system">Fall Height System</a></li></ul></li></ul></li><li><a href="#save-load-system">Save-Load System</a><ul><li><a href="#world-event-system">World Event System</a></li><li><a href="#unlocking-abilities">Unlocking Abilities</a><ul><li><a href="#bounce-mushroom-ability">Bounce Mushroom Ability</a></li></ul></li></ul></li><li><a href="#data-driven-gameplay-effect-system">Data-Driven Gameplay Effect System</a><ul><li><a href="#system-visuals">System Visuals</a></li><li><a href="#spore-hud-element">Spore HUD Element</a></li></ul></li><li><a href="#dialogue-system-plugin">Dialogue System plugin</a><ul><li><a href="#customizing-the-plugin">Customizing the plugin</a></li><li><a href="#writing-pipeline-easy-authoring-for-writers">Writing Pipeline: Easy Authoring for Writers</a></li></ul></li><li><a href="#menu-system-settings-menu-and-common-ui-plugin">Menu System, Settings Menu, and Common UI Plugin</a><ul><li><a href="#settings-menu">Settings Menu</a></li></ul></li></ul>
 
-            </nav>
-        </div>
-        
+
+      </footer>
+
+      
+
+      
+  <nav class="pagination">
+    
+      <a href="#" class="pagination--pager disabled">Previous</a>
+    
+    
+      <a href="/portfolio/elementals/" class="pagination--pager" title="Elementals
+">Next</a>
+    
+  </nav>
+
     </div>
+
+    
+  </article>
+
+  
+  
 </div>
 
-<!--script src="/assets/js/prism.js"></script>
-<script src="/assets/js/toc.js"></script-->
     </div>
 
     

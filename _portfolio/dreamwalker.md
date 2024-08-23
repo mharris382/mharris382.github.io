@@ -1,11 +1,11 @@
 ---
-layout: project
+##layout: project
 title: Dreamwalker
 excerpt: "A journey across mutable dreams"
 header:
-  teaser: /assets/images/dreamwalker/dreamwalker-thumb.png
-  overlay_image: /assets/images/dreamwalker/dreamwalker-header.png
-  overlay_filter: 0.25
+  teaser: /assets/images/dreamwalker/dreamwalker-thumb-wide.png
+  overlay_image: /assets/images/dreamwalker/patch-overlay-horizon.jpg
+  overlay_filter: rgba(56, 12, 95, 0.5)
 sidebar:
     - title: "Role"
     - text: "Lead Programmer, Technical Artist, Game Designer"
@@ -44,7 +44,7 @@ Dreamwalker is a first person action adventure game, set in the world of dreams.
 
 The one aspect of the project I would change if I could do it over would have been the choice to use only blueprints.  I choose not to use C++ initially to make it easier for the other members to use the project, and not require them to download visual studio in addition to unreal.  The second was that I did not anticipate the project extending beyond the duration of the Game Jam, so I thought blueprints would be sufficient.
 
-{% include video id="-D9cks-ZmRI" provider="youtube" %}
+{% include video id="lj6Z7pYfPn4" provider="youtube" %}
 
 
 # Top Technical Contributions
@@ -67,7 +67,7 @@ Early in the project, when the game was still planned as a simple exploration dr
 
 ## Procedural Mushroom Forest
 
-{% include video id="-B3W4-clTR8Y" provider="youtube" %}
+{% include video id="B3W4-clTR8Y" provider="youtube" %}
 
 This mushroom forest is one of my favorite personal achievements on this project. It was the challenge of this forest which brought my skills with PCG and procedural generation to the next level. The prior level, the paper desert, was signifantly less detailed than a photorealistic mushroom forest scene. To limit the scope of this task, I gave myself the limitations of not using any trees. I approached this challenge by reverse engineering the PCG sample project (Electric Dreams). I attempted to translate the techniques used to create that environment to the one I was trying to create. I also worked with the audio engineer to make it so that the forest would automatically generate correctly placed audio for the rivers and lakes.
 
