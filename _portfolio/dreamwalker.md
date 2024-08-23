@@ -8,7 +8,7 @@ header:
   overlay_filter: 0.25
 sidebar:
     - title: "Role"
-    - text: "Lead Programmer, Technical Artist, Designer"
+    - text: "Lead Programmer, Technical Artist, Game Designer"
     - title: "Project Information"
     - text: "Nov 2023 - Current"
     - text: "**Engine:** Unreal Engine 5.3"
@@ -46,6 +46,7 @@ The one aspect of the project I would change if I could do it over would have be
 
 {% include video id="-D9cks-ZmRI" provider="youtube" %}
 
+
 # Top Technical Contributions
 
 - **Smooth and intuitive character movement**, expanding the built-in movement handling including climbing, ledge grabs, step ups, and swimming. The majority of which are also animated
@@ -65,6 +66,8 @@ If it's in the game, I probably helped make it. In-engine audio is the only one 
 Early in the project, when the game was still planned as a simple exploration driven walking simulator, I wanted to really make the world stand out in its size and scope.  
 
 ## Procedural Mushroom Forest
+{% include video id="-B3W4-clTR8Y" provider="youtube" %}
+
 This mushroom forest is one of my favorite personal achievements on this project. It was the challenge of this forest which brought my skills with PCG and procedural generation to the next level. The prior level, the paper desert, was signifantly less detailed than a photorealistic mushroom forest scene. To limit the scope of this task, I gave myself the limitations of not using any trees. I approached this challenge by reverse engineering the PCG sample project (Electric Dreams). I attempted to translate the techniques used to create that environment to the one I was trying to create. I also worked with the audio engineer to make it so that the forest would automatically generate correctly placed audio for the rivers and lakes.
 
 ## PCG Designer/Artist Tools
