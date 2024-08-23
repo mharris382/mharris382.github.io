@@ -66,6 +66,7 @@ If it's in the game, I probably helped make it. In-engine audio is the only one 
 Early in the project, when the game was still planned as a simple exploration driven walking simulator, I wanted to really make the world stand out in its size and scope.  
 
 ## Procedural Mushroom Forest
+
 {% include video id="-B3W4-clTR8Y" provider="youtube" %}
 
 This mushroom forest is one of my favorite personal achievements on this project. It was the challenge of this forest which brought my skills with PCG and procedural generation to the next level. The prior level, the paper desert, was signifantly less detailed than a photorealistic mushroom forest scene. To limit the scope of this task, I gave myself the limitations of not using any trees. I approached this challenge by reverse engineering the PCG sample project (Electric Dreams). I attempted to translate the techniques used to create that environment to the one I was trying to create. I also worked with the audio engineer to make it so that the forest would automatically generate correctly placed audio for the rivers and lakes.
@@ -178,38 +179,6 @@ The other aspect of the spore system are the visual layers. There are two primar
 The first part has the additional complexity of potentially being represented in different ways depending on the context. 
 
 {% include figure popup=true image_path="assets/images/dreamwalker/spore-visual-decoupling.gif" alt="Spore Visual Decoupling" %}
-
-
-## Spore HUD Element
-After playtesting we agreed that the player should also have a HUD element that can show all their current active effects as well as how much longer the effect will last.
-
-[SCREENSHOT OF HUD DISPLAYING MULTIPLE SPORES]: #
-
-[POSSIBLY REMOVE CODE]: #
-~~~ cpp
-On Overlap Begin(actor):
-    spore_type = handle.table.get_row(handle.row_name)
-    spore_type_class = spore_type.behavior_class
-    
-    //check if spore was instantiated on this actor by another region
-    spore_class_inst = actor.get_component_of_class(spore_type_class)
-    if(spore_class_inst == null):
-        spore_class_inst = actor.add_component(spore_type_class)
-    
-    current_overlaps.add(actor, spore_class_inst)
-
-Tick(delta):
-    for each key_value_pair in current_overlaps:
-        spore_inst = key_value_pair.value
-        amount = compute_toxicity_delta_for_spore(delta)
-        current_tox = spore_inst.toxicity
-        current_tox += amount
-        current_tox = clamp(0, 1, current_tox)
-        spore_inst.toxicity = current_tox
-
-On Overlap End(actor):
-    if current_overlaps.contains(actor)
-~~~
 
 # Dialogue System plugin
 I can't take complete credit for the dialogue system in this game, the majority of the system is provided by [this marketplace asset][1]. However, I did have to do a fair amount of work to integrate it properly. I also implemented my own customizations to improve the system. The plugin was provided as a full game kit not a standalone plugin, so I needed to reverse engineer much of the project to extract the code I needed.
