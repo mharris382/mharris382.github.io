@@ -63,17 +63,28 @@ The one aspect of the project I would change if I could do it over would have be
 If it's in the game, I probably helped make it. In-engine audio is the only one area of development where I am not needed as frequently. However, there are a few standout features that I want to highlight as my most impressive contributions to the project.
 
 # Procedural Tools Using PCG
-Early in the project, when the game was still planned as a simple exploration driven walking simulator, I wanted to really make the world stand out in its size and scope.  
+Early in the project, when the game was still planned as a simple exploration driven walking simulator, I wanted to really make the world stand out in its size and scope.  Even though the team did not want this to be a procedural game, I believed that we could still utilize procedural generation to fill the world with detail, without the need to place everything by hand. Several months prior, I Unreal 5.2 released a new plugin called PCG (Procedural Content Generation), so I decided to look into this as a possible solution.
+
+## First Two Weeks with PCG
+I had to learn the basiscs about how to use PCG quickly, while also implementing the paper desert.  The team had decided to allocate 2 weeks to develop this world. ~~During these two weeks I learned several key things about using PCG.~~  One important point I learend was that I could query the scene for hand placed actors, which could then be used to drive elements of the procgen.  This allowed me to setup a actor class BP_Exclusion_Area which allowed us to designate areas to be excluded in the desert generation, such as the village. It would be bad to have giant bolders generated in the NPCs huts. I also created the BP_Pathway spline actor which was used to generate stone pathways along splines, which ended up being critical to player navigation within the large open world desert.
 
 ## Procedural Mushroom Forest
 
 {% include video id="B3W4-clTR8Y" provider="youtube" %}
 
-This mushroom forest is one of my favorite personal achievements on this project. It was the challenge of this forest which brought my skills with PCG and procedural generation to the next level. The prior level, the paper desert, was signifantly less detailed than a photorealistic mushroom forest scene. To limit the scope of this task, I gave myself the limitations of not using any trees. I approached this challenge by reverse engineering the PCG sample project (Electric Dreams). I attempted to translate the techniques used to create that environment to the one I was trying to create. I also worked with the audio engineer to make it so that the forest would automatically generate correctly placed audio for the rivers and lakes.
+After the desert, I challenged myself to take this new knowledge and generate a much more complex enviornment, the mushroom forest.  This mushroom forest is one of my favorite personal achievements on this project. ~~The prior level, the paper desert, was signifantly less detailed than a photorealistic mushroom forest scene.~~ To limit the scope of this task and the build size, I gave myself the limitations of not using any trees and instead relied on giant mushrooms to fill out the bulk of the forest. I approached this challenge by studying the PCG sample project (Electric Dreams). I attempted to translate the techniques used to create that environment to the one I was trying to create.  
+
+### Spawning PCG Data Assets 
+There were a number of key things I learned during this, but one of the things that was most valuable was the concept of using level instances as point cloud inputs.  So rather than spawning individual static meshes, I was now able to create meaningful collections of meshes that could be given logical tags.  For example, I was able to make a giant mushrooms covered in vine growth and then in the graph I could spawn the base mushroom 100% of the time, while the vines could be spawned less at a less frequent rate. 
+
+### Spawning Actors
+I noticed that PCG had a spawn actor node, which I figured out would allow me to use PCG to spawn anything, not just static meshes.  With this feature, I was able to work with the audio engineer so that the forest would generate audio for the rivers and lakes, which the graph was already had been using to exclude forest generation.  
+
+TODO: insert screenshots of forest
 
 ## PCG Designer/Artist Tools
 
-I realized through making this forest scene that I could use PCG to build designer tools, that produced closer to final quality visuals using basic controls like splines and exposed blueprint properties. The forest level has a planned temple area at the climax. I continued iterating on the procedural temple wall, and then eventually added a procedural temple floor as well. The addition of the procedural hole actor provided a sculpting mechanism, essentially allowing designers to subtract bricks from PCG temple. I added this for the purpose of adding doors, but discovered it has many more uses as well. I also added code in the floor that accounts for holes, which can be set to actually cut holes or to force specific sections to spawn as dirt or bricks.
+I realized through making this forest scene that I could use PCG to build designer tools, that produced closer to final quality visuals using basic controls like splines and exposed blueprint properties. The addition of the procedural hole actor provided a sculpting mechanism, essentially allowing designers to subtract bricks from PCG temple. I added this for the purpose of adding doors, but discovered it has many more uses as well. I also added code in the floor that accounts for holes, which can be set to actually cut holes or to force specific sections to spawn as dirt or bricks.
 
 {% include gallery id="gallery_pcg" caption="Procedurally generated stone rooms" %}
 
