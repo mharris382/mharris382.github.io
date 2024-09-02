@@ -42,7 +42,6 @@ feature_dialogue_google:
 
 Dreamwalker is a first person action adventure game, set in the world of dreams. I was attracted to this project because the opportunity to build worlds that don't fully adhere to the laws of reality.  In most of my previous projects my primary goal has been learning and improving my technical skills, while the goal of this project is to bring all those skills together and deliver a polished full length game.  Scope management has been a primary consideration for this project, but I have also been equally focused on building something that will stand out both in gameplay and aesthetics.  
 
-The one aspect of the project I would change if I could do it over would have been the choice to use only blueprints.  I choose not to use C++ initially to make it easier for the other members to use the project, and not require them to download visual studio in addition to unreal.  The second was that I did not anticipate the project extending beyond the duration of the Game Jam, so I thought blueprints would be sufficient.
 
 {% include video id="lj6Z7pYfPn4" provider="youtube" %}
 
@@ -57,16 +56,19 @@ The one aspect of the project I would change if I could do it over would have be
 - Integrated and customized a marketplace dialogue plugin
 
 ## Other Contributions
-- **I designed the majority of the gameplay mechanics**, usually presenting them to the the team through rapid prototypes
+- **I designed all the game's core mechanics**, usually presenting them to the the team through rapid prototypes
 - **Teaching and onboarding** team members in Unreal Engine
 
-If it's in the game, I probably helped make it. In-engine audio is the only one area of development where I am not needed as frequently. However, there are a few standout features that I want to highlight as my most impressive contributions to the project.
+[**TODO: desert generation details**]: #
+
 
 # Procedural Tools Using PCG
 Early in the project, when the game was still planned as a simple exploration driven walking simulator, I wanted to really make the world stand out in its size and scope.  Even though the team did not want this to be a procedural game, I believed that we could still utilize procedural generation to fill the world with detail, without the need to place everything by hand. Several months prior, I Unreal 5.2 released a new plugin called PCG (Procedural Content Generation), so I decided to look into this as a possible solution.
 
 ## First Two Weeks with PCG
 I had to learn the basiscs about how to use PCG quickly, while also implementing the paper desert.  The team had decided to allocate 2 weeks to develop this world. ~~During these two weeks I learned several key things about using PCG.~~  One important point I learend was that I could query the scene for hand placed actors, which could then be used to drive elements of the procgen.  This allowed me to setup a actor class BP_Exclusion_Area which allowed us to designate areas to be excluded in the desert generation, such as the village. It would be bad to have giant bolders generated in the NPCs huts. I also created the BP_Pathway spline actor which was used to generate stone pathways along splines, which ended up being critical to player navigation within the large open world desert.
+
+[**TODO: desert generation details**]: #
 
 ## Procedural Mushroom Forest
 
@@ -80,7 +82,7 @@ There were a number of key things I learned during this, but one of the things t
 ### Spawning Actors
 I noticed that PCG had a spawn actor node, which I figured out would allow me to use PCG to spawn anything, not just static meshes.  With this feature, I was able to work with the audio engineer so that the forest would generate audio for the rivers and lakes, which the graph was already had been using to exclude forest generation.  
 
-TODO: insert screenshots of forest
+[**TODO: forest generation details**]: #
 
 ## PCG Designer/Artist Tools
 
@@ -214,6 +216,11 @@ All the of game's settings are stored in a save file, separate from the gameplay
 
 [TODO: add a screenshot of the menu system]: #
 
+
+
+
+# Reflection
+The one aspect of the project I would change if I could do it over would have been the choice to use only blueprints.  I choose not to use C++ initially to make it easier for the other members to use the project, and not require them to download visual studio in addition to unreal.  The second was that I did not anticipate the project extending beyond the duration of the Game Jam, so I thought blueprints would be sufficient.
 
 
 [1]: <https://www.unrealengine.com/marketplace/en-US/product/defender-animated-dialogue-system> "dialogue system asset"
