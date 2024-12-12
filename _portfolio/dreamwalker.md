@@ -6,13 +6,16 @@ header:
   teaser: /assets/images/dreamwalker/dreamwalker-thumb-wide.png
   overlay_image: /assets/images/dreamwalker/patch-overlay-horizon.jpg
   overlay_filter: rgba(56, 12, 95, 0.5)
+  actions: 
+  - label: "Official site"
+    url: "https://dreammatterlabs.com/"
 sidebar:
     - title: "Role"
     - text: "Lead Programmer, Technical Artist, Game Designer"
     - title: "Project Information"
     - text: "Nov 2023 - Current"
-    - text: "**Engine:** Unreal Engine 5.3"
-    - text: "**Language:** Blueprints, Material Nodes"
+    - text: "**Engine:** Unreal Engine 5.5"
+    - text: "**Language:** Blueprints, C++"
     - text: "**Tools:**"
     - text: "PCG Framework, Common UI, Gaia, Blender"
 images_folder: assets/images/dreamwalker/
