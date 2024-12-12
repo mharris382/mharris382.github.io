@@ -36,7 +36,7 @@
 
 
 
-  <meta property="article:published_time" content="2024-08-23T16:06:13-04:00">
+  <meta property="article:published_time" content="2024-12-12T17:02:37-05:00">
 
 
 
@@ -247,14 +247,12 @@
           <aside class="sidebar__right sticky">
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-far fa-list-alt"></i> Table of Contents</h4></header>
-              <ul class="toc__menu"><li><a href="#top-technical-contributions">Top Technical Contributions</a><ul><li><a href="#other-contributions">Other Contributions</a></li></ul></li><li><a href="#procedural-tools-using-pcg">Procedural Tools Using PCG</a><ul><li><a href="#procedural-mushroom-forest">Procedural Mushroom Forest</a></li><li><a href="#pcg-designerartist-tools">PCG Designer/Artist Tools</a><ul><li><a href="#pcg-tools-feature-highlights">PCG Tools Feature Highlights</a></li></ul></li></ul></li><li><a href="#expanded-character-movement">Expanded Character Movement</a><ul><li><a href="#animations-and-head-bobbing">Animations and Head Bobbing</a></li><li><a href="#ledge-grab-and-ledge-climb">Ledge Grab and Ledge Climb</a></li><li><a href="#player-position-resets--fall-height">Player Position Resets &amp; Fall Height</a><ul><li><a href="#fall-height-system">Fall Height System</a></li></ul></li></ul></li><li><a href="#save-load-system">Save-Load System</a><ul><li><a href="#world-event-system">World Event System</a></li><li><a href="#unlocking-abilities">Unlocking Abilities</a><ul><li><a href="#bounce-mushroom-ability">Bounce Mushroom Ability</a></li></ul></li></ul></li><li><a href="#data-driven-gameplay-effect-system">Data-Driven Gameplay Effect System</a><ul><li><a href="#system-visuals">System Visuals</a></li></ul></li><li><a href="#dialogue-system-plugin">Dialogue System plugin</a><ul><li><a href="#customizing-the-plugin">Customizing the plugin</a></li><li><a href="#writing-pipeline-easy-authoring-for-writers">Writing Pipeline: Easy Authoring for Writers</a></li></ul></li><li><a href="#menu-system-settings-menu-and-common-ui-plugin">Menu System, Settings Menu, and Common UI Plugin</a><ul><li><a href="#settings-menu">Settings Menu</a></li></ul></li></ul>
+              <ul class="toc__menu"><li><a href="#top-technical-contributions">Top Technical Contributions</a></li><li><a href="#procedural-tools-using-pcg">Procedural Tools Using PCG</a><ul><li><a href="#first-two-weeks-with-pcg">First Two Weeks with PCG</a></li><li><a href="#procedural-mushroom-forest">Procedural Mushroom Forest</a><ul><li><a href="#spawning-pcg-data-assets">Spawning PCG Data Assets</a></li><li><a href="#spawning-actors">Spawning Actors</a></li></ul></li><li><a href="#pcg-designerartist-tools">PCG Designer/Artist Tools</a><ul><li><a href="#pcg-tools-feature-highlights">PCG Tools Feature Highlights</a></li></ul></li></ul></li><li><a href="#expanded-character-movement">Expanded Character Movement</a><ul><li><a href="#animations-and-head-bobbing">Animations and Head Bobbing</a></li><li><a href="#ledge-grab-and-ledge-climb">Ledge Grab and Ledge Climb</a></li><li><a href="#player-position-resets--fall-height">Player Position Resets &amp; Fall Height</a><ul><li><a href="#fall-height-system">Fall Height System</a></li></ul></li></ul></li><li><a href="#save-load-system">Save-Load System</a><ul><li><a href="#world-event-system">World Event System</a></li><li><a href="#unlocking-abilities">Unlocking Abilities</a><ul><li><a href="#bounce-mushroom-ability">Bounce Mushroom Ability</a></li></ul></li></ul></li><li><a href="#data-driven-gameplay-effect-system">Data-Driven Gameplay Effect System</a><ul><li><a href="#system-visuals">System Visuals</a></li></ul></li><li><a href="#dialogue-system-plugin">Dialogue System plugin</a><ul><li><a href="#customizing-the-plugin">Customizing the plugin</a></li><li><a href="#writing-pipeline-easy-authoring-for-writers">Writing Pipeline: Easy Authoring for Writers</a></li></ul></li><li><a href="#menu-system-settings-menu-and-common-ui-plugin">Menu System, Settings Menu, and Common UI Plugin</a><ul><li><a href="#settings-menu">Settings Menu</a></li></ul></li><li><a href="#reflection">Reflection</a></li></ul>
 
             </nav>
           </aside>
         
         <p>Dreamwalker is a first person action adventure game, set in the world of dreams. I was attracted to this project because the opportunity to build worlds that don’t fully adhere to the laws of reality.  In most of my previous projects my primary goal has been learning and improving my technical skills, while the goal of this project is to bring all those skills together and deliver a polished full length game.  Scope management has been a primary consideration for this project, but I have also been equally focused on building something that will stand out both in gameplay and aesthetics.</p>
-
-<p>The one aspect of the project I would change if I could do it over would have been the choice to use only blueprints.  I choose not to use C++ initially to make it easier for the other members to use the project, and not require them to download visual studio in addition to unreal.  The second was that I did not anticipate the project extending beyond the duration of the Game Jam, so I thought blueprints would be sufficient.</p>
 
 <!-- Courtesy of embedresponsively.com //-->
 
@@ -265,24 +263,20 @@
 <h1 id="top-technical-contributions">Top Technical Contributions</h1>
 
 <ul>
-  <li><strong>Smooth and intuitive character movement</strong>, expanding the built-in movement handling including climbing, ledge grabs, step ups, and swimming. The majority of which are also animated</li>
-  <li><strong>Procedural Generation Tools</strong> for rapid and non-destructive level building using PCG</li>
+  <li><strong>Smooth and intuitive character movement</strong>, expanded the built-in movement handling including climbing, ledge grabs, sliding, and swimming.</li>
+  <li><strong>Procedural Generation Tools</strong> for rapid and non-destructive worldbuilding using PCG</li>
   <li><strong>Data driven Spore Effect Framework</strong> which provides a simple yet elegant way to build and apply temporary special effects to the player (or other actors).</li>
   <li>Iterated and developed <strong>intutive and flexible designer tools</strong> to streamline development and produce fun and exciting gameplay</li>
-  <li><strong>Full controller support</strong> for all UIs using the Common UI plugin</li>
-  <li>Integrated and customized a marketplace dialogue plugin</li>
+  <li><strong>Rapidly Prototyped</strong> new mechanics and visual effects</li>
+  <li><strong>Full controller support</strong> for all UIs using the Common UI plugin and integrated and customized a data driven dialogue system</li>
+  <li><strong>Teaching and onboarding</strong> designers and artists in Unreal Engine and the tools and workflows specific to the project.</li>
 </ul>
-
-<h2 id="other-contributions">Other Contributions</h2>
-<ul>
-  <li><strong>I designed the majority of the gameplay mechanics</strong>, usually presenting them to the the team through rapid prototypes</li>
-  <li><strong>Teaching and onboarding</strong> team members in Unreal Engine</li>
-</ul>
-
-<p>If it’s in the game, I probably helped make it. In-engine audio is the only one area of development where I am not needed as frequently. However, there are a few standout features that I want to highlight as my most impressive contributions to the project.</p>
 
 <h1 id="procedural-tools-using-pcg">Procedural Tools Using PCG</h1>
-<p>Early in the project, when the game was still planned as a simple exploration driven walking simulator, I wanted to really make the world stand out in its size and scope.</p>
+<p>Early in the project, when the game was still planned as a simple exploration driven walking simulator, I wanted to really make the world stand out in its size and scope.  Even though the team did not want this to be a procedural game, I believed that we could still utilize procedural generation to fill the world with detail, without the need to place everything by hand. Several months prior, I Unreal 5.2 released a new plugin called PCG (Procedural Content Generation), so I decided to look into this as a possible solution.</p>
+
+<h2 id="first-two-weeks-with-pcg">First Two Weeks with PCG</h2>
+<p>I had to learn the basiscs about how to use PCG quickly, while also implementing the paper desert.  The team had decided to allocate 2 weeks to develop this world. One important point I learend was that I could query the scene for hand placed actors, which could then be used to drive elements of the procgen. This allowed me to setup a actor class BP_Exclusion_Area which allowed us to designate areas to be excluded in the desert generation, such as the village. It would be bad to have giant bolders generated in the NPCs huts. I also created the BP_Pathway spline actor which was used to generate stone pathways along splines, which ended up being critical to player navigation within the large open world desert.</p>
 
 <h2 id="procedural-mushroom-forest">Procedural Mushroom Forest</h2>
 
@@ -292,11 +286,17 @@
     <iframe src="https://www.youtube-nocookie.com/embed/B3W4-clTR8Y" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
   </div>
 
-<p>This mushroom forest is one of my favorite personal achievements on this project. It was the challenge of this forest which brought my skills with PCG and procedural generation to the next level. The prior level, the paper desert, was signifantly less detailed than a photorealistic mushroom forest scene. To limit the scope of this task, I gave myself the limitations of not using any trees. I approached this challenge by reverse engineering the PCG sample project (Electric Dreams). I attempted to translate the techniques used to create that environment to the one I was trying to create. I also worked with the audio engineer to make it so that the forest would automatically generate correctly placed audio for the rivers and lakes.</p>
+<p>After the desert, I challenged myself to take this new knowledge and generate a much more complex enviornment, the mushroom forest. This mushroom forest is one of my favorite personal achievements on this project. To limit the scope of this task and the build size, I gave myself the limitations of not using any trees and instead relied on giant mushrooms to fill out the bulk of the forest. I approached this challenge by studying the PCG sample project (Electric Dreams). I attempted to translate the techniques used to create that environment to the one I was trying to create.</p>
+
+<h3 id="spawning-pcg-data-assets">Spawning PCG Data Assets</h3>
+<p>There were a number of key things I learned during this, but one of the things that was most valuable was the concept of using level instances as point cloud inputs. So rather than spawning individual static meshes, I was now able to create meaningful collections of meshes that could be given logical tags. For example, I was able to make a giant mushrooms covered in vine growth and then in the graph I could spawn the base mushroom 100% of the time, while the vines could be spawned less at a less frequent rate.</p>
+
+<h3 id="spawning-actors">Spawning Actors</h3>
+<p>I noticed that PCG had a spawn actor node, which I figured out would allow me to use PCG to spawn anything, not just static meshes. With this feature, I was able to work with the audio engineer so that the forest would generate audio for the rivers and lakes, which the graph was already had been using to exclude forest generation.</p>
 
 <h2 id="pcg-designerartist-tools">PCG Designer/Artist Tools</h2>
 
-<p>I realized through making this forest scene that I could use PCG to build designer tools, that produced closer to final quality visuals using basic controls like splines and exposed blueprint properties. The forest level has a planned temple area at the climax. I continued iterating on the procedural temple wall, and then eventually added a procedural temple floor as well. The addition of the procedural hole actor provided a sculpting mechanism, essentially allowing designers to subtract bricks from PCG temple. I added this for the purpose of adding doors, but discovered it has many more uses as well. I also added code in the floor that accounts for holes, which can be set to actually cut holes or to force specific sections to spawn as dirt or bricks.</p>
+<p>I realized through making this forest scene that I could use PCG to build designer tools, that produced closer to final quality visuals using basic controls like splines and exposed blueprint properties. The addition of the procedural hole actor provided a sculpting mechanism, essentially allowing designers to subtract bricks from PCG temple. I added this for the purpose of adding doors, but discovered it has many more uses as well. I also added code in the floor that accounts for holes, which can be set to actually cut holes or to force specific sections to spawn as dirt or bricks.</p>
 
 <figure class="third ">
   
@@ -489,6 +489,9 @@ Grabbing dynamic platforms was slightly trickier. I tried a few techniques to ac
 
 <h2 id="settings-menu">Settings Menu</h2>
 <p>All the of game’s settings are stored in a save file, separate from the gameplay save file. Settings are loaded immediately, and are globaly acessible by any class through the Game Instance. Each category of the settings menu is a widget that inherits from a base class. Using a dirty flag, the root menu class tracks whether or not settings have been altered. This allows the root settings menu class to prompt the player to either keep or discard their changes when they leave the menu. This feature is very important because players on lower end machines could set their settings too high, causing their frame rate to drop to near zero. If this happens, it becomes near impossible to navigate the menu and revert the settings. The prompt and the countdown timer solve this issue because it will automatically revert to the previous settings if the player fails to apply their changes.</p>
+
+<h1 id="reflection">Reflection</h1>
+<p>The one aspect of the project I would change if I could do it over would have been the choice to use only blueprints. I choose not to use C++ initially to make it easier for the other members to use the project, and not require them to download visual studio in addition to unreal. The second was that I did not anticipate the project extending beyond the duration of the Game Jam, so I thought blueprints would be sufficient.</p>
 
 
         
