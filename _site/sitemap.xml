@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>/portfolio/dreamwalker/</loc>
-<lastmod>2024-12-12T17:14:25-05:00</lastmod>
+<loc>http://localhost:4000/portfolio/dreamwalker/</loc>
+<lastmod>2025-11-28T18:36:45-05:00</lastmod>
 </url>
 <url>
-<loc>/portfolio/elementals/</loc>
-<lastmod>2024-12-12T17:14:25-05:00</lastmod>
+<loc>http://localhost:4000/portfolio/elementals/</loc>
+<lastmod>2025-11-28T18:36:45-05:00</lastmod>
 </url>
 <url>
-<loc>/portfolio/steam-eagles/</loc>
-<lastmod>2024-12-12T17:14:25-05:00</lastmod>
+<loc>http://localhost:4000/portfolio/steam-eagles/</loc>
+<lastmod>2025-11-28T18:36:45-05:00</lastmod>
 </url>
 <url>
-<loc>/</loc>
+<loc>http://localhost:4000/</loc>
 </url>
 <url>
-<loc>/home</loc>
+<loc>http://localhost:4000/home</loc>
 </url>
 <url>
-<loc>/portfolio/</loc>
+<loc>http://localhost:4000/portfolio/</loc>
 </url>
 </urlset>

@@ -6,11 +6,14 @@ permalink: /
 header:
     overlay_color: "#0092ca"
     overlay_filter: 0.25
-    actions:
-        - label: "Itch.io"
-          url: "https://tyranicgoat.itch.io/"
-        - label: "Github"
-          url: "https://github.com/mharris382"
+    #actions:
+     #   - label: "Itch.io"
+      #    url: "tyranicgoat.itch.io/"
+       # - label: "Github"
+        #  url: "github.com/mharris382"
+        #- label: "Artstation"
+         # icon: "fab fa-artstation"
+          #url: "mharris42.artstation.com/"
 feature_row:
     - image_path: /assets/images/dreamwalker/dreamwalker-thumb-wide.png
       title: "Dreamwalker"

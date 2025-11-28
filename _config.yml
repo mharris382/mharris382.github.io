@@ -29,6 +29,9 @@ social:
     - label: "LinkedIn"
       icon: "fab fa-linkedin"
       url: "https://www.linkedin.com/in/mharris382" 
+    - label: "Artstation"
+      icon: "fab fa-artstation"
+      url: "https://mharris42.artstation.com/"
     - label: "itch.io"
       icon: "fab fa-itch-io"
       url: "https://tyranicgoat.itch.io/"
@@ -40,7 +43,7 @@ social:
 author:
   name             : "Max Harris"
   #avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
+  #bio              : "I am an **amazing** person."
   #location         : 
   links:
     - label: "Email"
@@ -51,14 +54,18 @@ author:
       icon: "fab fa-linkedin"
       url: "https://www.linkedin.com/in/mharris382" 
       name: linkedin
-    - label: "itch.io"
-      icon: "fab fa-itch-io"
-      url: "https://tyranicgoat.itch.io/"
-      name: itch
+    - label: "ArtStation"
+      icon: "fab fa-artstation"
+      url: "https://mharris42.artstation.com/"
+      name: artstation
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/mharris382"
       name: github
+    - label: "Itch.io"
+      icon: "fab fa-itch-io"
+      url: "https://tyranicgoat.itch.io/"
+      name: itch
 
 # Site Footer
 footer:
@@ -66,12 +73,15 @@ footer:
     - label: "LinkedIn"
       icon: "fab fa-linkedin"
       url: "https://www.linkedin.com/in/mharris382" 
-    - label: "itch.io"
-      icon: "fab fa-itch-io"
-      url: "https://tyranicgoat.itch.io/"
+    - label: "ArtStation"
+      icon: "fab fa-artstation"
+      url: "https://mharris42.artstation.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/mharris382"
+    - label: "Itch.io"
+      icon: "fab fa-itch-io"
+      url: "https://tyranicgoat.itch.io/"
 #    - label: "Twitter"
 #      icon: "fab fa-fw fa-twitter-square"
 #      # url:
